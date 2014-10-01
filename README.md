@@ -18,7 +18,7 @@ Jerome : armadon13127@gmail.com
 
 Design
 
-Ludo : vous l'avez déjà ..
+Ludo : ludovic.romano@live.fr
 Romain : romain.lelievre93@gmail.com
 Yuxing : unearthnight@gmail.com
 
