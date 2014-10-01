@@ -1,0 +1,7 @@
+Unity :
+http://pixelnest.io/tutorials/2d-game-unity/table-of-contents
+
+Dessin Vectoriel / Design
+http://2dgameartforprogrammers.blogspot.fr/2011/10/creating-game-character.html
+http://www.gamasutra.com/blogs/ChrisHildenbrand/20111015/90415/2D_Game_Art_For_Programmers__Part_1_updated.php
+http://gamasutra.com/blogs/ChrisHildenbrand/20111019/8692/2D_Game_Art_For_Programmers__Part_2.php
