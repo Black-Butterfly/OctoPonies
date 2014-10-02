@@ -3,11 +3,27 @@
 public class PlayerScript : MonoBehaviour 
 {
     public Vector2 speed = new Vector2(15, 25);
-    public Vector3 CheckPoint = new Vector3(-14, 1, 0);
+    public Vector3 CheckPoint = new Vector3(-14, 2, 0);
+    public float deathY = -5;
     private int Direction = 0;
     private Vector2 movement;
-    private bool onGround = false;
-	
+    public bool onGround = false;
+
+    void Death()
+    {
+        Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
+        Direction = 0;
+        this.transform.localPosition = newPos;
+    }
+    /*
+    void OnTriggerEnter2D(Collider2D collision){
+        BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
+        if (BS != null)
+        {
+               Direction = 0;
+        }
+    }*/
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
@@ -18,9 +34,7 @@ public class PlayerScript : MonoBehaviour
         TrapScript TS = collision.gameObject.GetComponent<TrapScript>();
         if (TS != null)
         {
-            Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
-            Direction = 0;
-            this.transform.localPosition = newPos;
+            Death();
         }
     }
     void OnCollisionExit2D(Collision2D collision)
@@ -47,7 +61,9 @@ public class PlayerScript : MonoBehaviour
         {
             inputY = 1;
         }
-        
+
+        if (this.transform.localPosition.y < deathY) Death();
+
         movement = new Vector2(speed.x * Direction, (speed.y * inputY ) + rigidbody2D.velocity.y);
 	}
     void FixedUpdate()

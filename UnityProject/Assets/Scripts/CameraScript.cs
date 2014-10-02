@@ -19,7 +19,9 @@ public class CameraScript : MonoBehaviour {
 	void Update () {
         if (xMod > (double)playerDirection) xMod -= step;
         if (xMod < (double)playerDirection) xMod += step;
+
         Vector3 localPos = new Vector3((float)(xMod * xBase), yBase, zBase);
         this.transform.localPosition = localPos;
+
 	}
 }
