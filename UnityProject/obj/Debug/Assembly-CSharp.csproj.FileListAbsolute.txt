@@ -1,0 +1,11 @@
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Dygit4lis\Documents\Test001\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Dygit4lis\Documents\Test001\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Dygit4lis\Documents\Test001\obj\Debug\Assembly-CSharp.dll
+C:\Users\Dygit4lis\Documents\Test001\obj\Debug\Assembly-CSharp.pdb
