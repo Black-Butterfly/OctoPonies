@@ -9,3 +9,11 @@ Ludo :
 	1 - Silent Hill Dubstep
 	2 - Crash Bandicoot 
 	3 - Final ou Pyro
+
+Stan : 
+	1 - Kanto gym battle (raccourcie)
+	2 - FF Duel of the Blades
+	3 - Crash Bandicoot ou Kirby's Cabbagge Salad 
+	(la deuxieme en enlevant entre 1:00 et 1:58 environ, 
+	et en raccourcisant la fin)
+ 
