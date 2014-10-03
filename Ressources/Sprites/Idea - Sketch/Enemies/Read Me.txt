@@ -1,0 +1,6 @@
+Ceci sont les sprites des jeux. Ils ne sont là que au cas ou l'imagination flanche.
+Il serait intéréssant de se baser sur un ou deux énemies de chaque MAIS d'abord faire deux monstres 
+complètement indépendent.
+
+Une fois un mob fait de profile, le déposer dans : Rendu
+ 
