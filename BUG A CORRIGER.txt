@@ -1,0 +1,3 @@
+- le saut ne fonctionne pas toujours
+
+- la colision avec un mur est mal gérer (personnage légèrement dans le mur)
