@@ -62,9 +62,9 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") != 0) 
         {
-			int temp = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
-			if(!(onWall && lastDirection == temp))
-            	Direction = temp;
+			int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
+			if(!(onWall && lastDirection == newDirection))
+				Direction = newDirection;
         }
         CameraScript cs = this.GetComponentInChildren<CameraScript>();
         cs.playerDirection = Direction;
@@ -75,13 +75,19 @@ public class PlayerScript : MonoBehaviour
         {
             inputY = 1;
         }
+		else if (jump && onWall && !onGround)
+		{
+			Direction = -(lastDirection);
+			inputY = 1;
+		}
 
         if (this.transform.localPosition.y < deathY) Death();
 
         movement = new Vector2(speed.x * Direction, (speed.y * inputY ) + rigidbody2D.velocity.y);
+		rigidbody2D.velocity = movement;
 	}
     void FixedUpdate()
     {
-        rigidbody2D.velocity = movement;
+        
     }
 }
