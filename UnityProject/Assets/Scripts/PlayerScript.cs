@@ -6,8 +6,10 @@ public class PlayerScript : MonoBehaviour
     public Vector3 CheckPoint = new Vector3(-14, 2, 0);
     public float deathY = -5;
     private int Direction = 0;
+	private int lastDirection = 0;
     private Vector2 movement;
     public bool onGround = false;
+	public bool onWall = false;
 
     void Death()
     {
@@ -15,14 +17,16 @@ public class PlayerScript : MonoBehaviour
         Direction = 0;
         this.transform.localPosition = newPos;
     }
-    /*
+    
     void OnTriggerEnter2D(Collider2D collision){
         BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
         if (BS != null)
         {
-               Direction = 0;
+			lastDirection = Direction;
+            Direction = 0;
+			onWall = true;
         }
-    }*/
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -45,12 +49,22 @@ public class PlayerScript : MonoBehaviour
             onGround = false;
         }
     }
+	void OnTriggerExit2D(Collider2D collision)
+	{
+		BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
+		if (BS != null)
+		{
+			onWall = false;
+		}
+	}
 	// Update is called once per frame
 	void Update () 
     {
         if (Input.GetAxis("Horizontal") != 0) 
         {
-            Direction = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
+			int temp = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
+			if(!(onWall && lastDirection == temp))
+            	Direction = temp;
         }
         CameraScript cs = this.GetComponentInChildren<CameraScript>();
         cs.playerDirection = Direction;
