@@ -83,9 +83,35 @@ public class PlayerScript : MonoBehaviour
             inputY = 1.1f;
         }
 
-        if (this.transform.localPosition.y < deathY) Death();
+        var dist = (transform.position - Camera.main.transform.position).z;
+
+        var leftBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(0, 0, dist)
+        ).x;
+
+        var rightBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(1, 0, dist)
+        ).x;
+
+        var topBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(0, 1, dist)
+        ).y;
+
+        var bottomBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(0, 0, dist)
+        ).y;
+
+        if (transform.position.x < leftBorder ||
+            transform.position.x > rightBorder ||
+            transform.position.y < bottomBorder ||
+            transform.position.y > topBorder) Death();
 
         movement = new Vector2(speed.x * Direction, (speed.y * inputY) + rigidbody2D.velocity.y);
         rigidbody2D.velocity = movement;
+    }
+
+    void FixedUpdate()
+    {
+        
     }
 }
