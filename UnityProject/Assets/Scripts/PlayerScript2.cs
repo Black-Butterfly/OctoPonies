@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerScript : MonoBehaviour 
+public class PlayerScript2 : MonoBehaviour 
 {
     public Vector2 speed = new Vector2(15, 25);
     public Vector3 CheckPoint = new Vector3(-14, 2, 0);
