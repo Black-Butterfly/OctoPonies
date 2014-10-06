@@ -2,6 +2,7 @@
 
 public class PlayerScript : MonoBehaviour 
 {
+    public RailCameraScript RCS = null;
     public Vector2 speed = new Vector2(15, 25);
     public Vector3 CheckPoint = new Vector3(-14, 2, 0);
     public float deathY = -5;
@@ -13,6 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     void Death()
     {
+        RCS.Reset(CheckPoint);
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
         Direction = 0;
         this.transform.localPosition = newPos;
@@ -62,12 +64,13 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") != 0) 
         {
+            RCS.StartMoving();
 			int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
 			if(!(onWall && lastDirection == newDirection))
 				Direction = newDirection;
         }
-        CameraScript cs = this.GetComponentInChildren<CameraScript>();
-        cs.playerDirection = Direction;
+        /*CameraScript cs = this.GetComponentInChildren<CameraScript>();
+        cs.playerDirection = Direction;*/
         float inputY = 0;
         bool jump = Input.GetButtonDown("Jump");
         
