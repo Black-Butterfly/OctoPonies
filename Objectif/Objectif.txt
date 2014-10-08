@@ -1,0 +1,26 @@
+Objectif au 8/10/2014
+
+Design :
+
+Ludovic 	: Main Character (P+V+G) + début mis en place des frames pour le mouvements ( course )(papier)
+Romain 		: Plateforme (P+V+G) + bumper (P+V+G) + corde (P+V)
+Yuxing 		: Design de deux enemis (Papier + Vectoriel)
+
+Programmation :
+
+Stanislas 	: Elaboration des bases du moteur principal + Gestion caméra
+Jerome		: Gestion des colisions 
+Kevin		: Gestion des collectibles
+
+
+Objectif au 15/10/2014
+
+Ludovic : toutes les frames mouvements ( saut + course + glissade ) (V+G)
+Romain 	: A determiner 
+Yuxing 	: A determiner
+
+Programmation :
+
+Stanislas 	: A determiner (Glissade au sol + Glissade sur corde ?)
+Jerome		: Gestion des mouvements du personnage (Rebond sur mur, Rebond sur bumper, Possibilité de se rattrapper sur [Mur/Sol]) 
+Kevin		: A determiner
