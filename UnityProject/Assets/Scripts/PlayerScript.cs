@@ -5,12 +5,11 @@ public class PlayerScript : MonoBehaviour
     public RailCameraScript RCS = null;
     public Vector2 speed = new Vector2(15, 25);
     public Vector3 CheckPoint = new Vector3(-14, 2, 0);
-    public float deathY = -5;
     private int Direction = 0;
     private int lastDirection = 0;
     private Vector2 movement;
-    public bool onGround = false;
-    public bool onWall = false;
+    private bool onGround = false;
+    private bool onWall = false;
 
     void Death()
     {
@@ -20,23 +19,24 @@ public class PlayerScript : MonoBehaviour
         this.transform.localPosition = newPos;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
-        if (BS != null)
-        {
-            lastDirection = Direction;
-            Direction = 0;
-            onWall = true;
-        }
-    }
-
     void OnCollisionEnter2D(Collision2D collision)
     {
         BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
         if (BS != null)
         {
-            onGround = true;
+            Vector2 hit = collision.contacts[0].normal;
+
+            float angle = Vector2.Angle(hit, Vector2.right);
+
+            if (Mathf.Approximately(angle, 0) ||Mathf.Approximately(angle, 180))
+            { // Gauche (0) ou Droite (180)
+                onWall = true;
+                Direction = 0;
+            }
+            if (Mathf.Approximately(angle, 90))
+            { // Bas
+                onGround = true;
+            }
         }
         TrapScript TS = collision.gameObject.GetComponent<TrapScript>();
         if (TS != null)
@@ -49,15 +49,11 @@ public class PlayerScript : MonoBehaviour
         BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
         if (BS != null)
         {
-            onGround = false;
-        }
-    }
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
-        if (BS != null)
-        {
-            onWall = false;
+            if ((rigidbody2D.velocity.x == 0 && rigidbody2D.velocity.y != 0 && !onGround) 
+                || rigidbody2D.velocity.x != 0)
+                onWall = false;
+            if (rigidbody2D.velocity.y != 0)
+                onGround = false;
         }
     }
     // Update is called once per frame
@@ -68,19 +64,23 @@ public class PlayerScript : MonoBehaviour
             RCS.StartMoving();
             int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
             if (!(onWall && lastDirection == newDirection))
+            {
+                lastDirection = Direction;
                 Direction = newDirection;
+            }
         }
         float inputY = 0;
         bool jump = Input.GetButtonDown("Jump");
 
         if (jump && onGround)
         {
-            inputY = 1;
+            inputY = speed.y * 1;
         }
         else if (jump && onWall && !onGround)
         {
             Direction = -(lastDirection);
-            inputY = 1.1f;
+            lastDirection = Direction;
+            inputY = (speed.y * 1) - rigidbody2D.velocity.y;
         }
 
         var dist = (transform.position - Camera.main.transform.position).z;
@@ -106,12 +106,7 @@ public class PlayerScript : MonoBehaviour
             transform.position.y < bottomBorder ||
             transform.position.y > topBorder) Death();
 
-        movement = new Vector2(speed.x * Direction, (speed.y * inputY) + rigidbody2D.velocity.y);
+        movement = new Vector2(speed.x * Direction, inputY + rigidbody2D.velocity.y);
         rigidbody2D.velocity = movement;
-    }
-
-    void FixedUpdate()
-    {
-        
     }
 }
