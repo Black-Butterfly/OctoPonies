@@ -23,16 +23,13 @@ public class PlayerScript2 : MonoBehaviour
 
 		float angle = Vector2.Angle(hit, Vector2.right);
 		
-		if (Mathf.Approximately(angle, 0)) { // Gauche
-			onWall = true;
-			Direction = 0;
-		}
-		if (Mathf.Approximately(angle, 180)) { // Droite
+		if (Mathf.Approximately(angle, 0) || Mathf.Approximately(angle, 180)) { // Gauche ou droite
 			onWall = true;
 			Direction = 0;
 		}
 		if (Mathf.Approximately(angle, 90)) { // Bas
 			onGround = true;
+			this.rigidbody2D.gravityScale = 5;
 		}
 	}
     void OnCollisionExit2D(Collision2D collision)
@@ -60,6 +57,9 @@ public class PlayerScript2 : MonoBehaviour
         }
         CameraScript cs = this.GetComponentInChildren<CameraScript>();
         //cs.playerDirection = Direction;
+
+		if(onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
+
         float inputY = 0;
         bool jump = Input.GetButtonDown("Jump");
         
@@ -72,6 +72,7 @@ public class PlayerScript2 : MonoBehaviour
 			Direction = -(lastDirection);
 			lastDirection = Direction;
 			inputY = (speed.y * 1) - rigidbody2D.velocity.y;
+			this.rigidbody2D.gravityScale = 5;
 		}
 
         if (this.transform.localPosition.y < deathY) Death();
