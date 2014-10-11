@@ -13,7 +13,7 @@ Groupe :
 Gameplay
 
 Stan : Stanislas.mur@gmail.com
-Kevin : kevin.harvez@gmail.com
+Kevin : kevin.havrez@gmail.com
 Jerome : armadon13127@gmail.com
 
 Design
