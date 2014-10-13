@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\PlayerScript2.cs" />
      <Compile Include="Assets\Scripts\RailCameraScript.cs" />
      <Compile Include="Assets\Scripts\RotationScript.cs" />
+     <Compile Include="Assets\Scripts\SpecialEffectsHelper.cs" />
      <Compile Include="Assets\Scripts\TrapScript.cs" />
      <None Include="Assets\Scripts\obj\x86\Debug\Scripts.csproj.FileListAbsolute.txt" />
   </ItemGroup>

@@ -11,8 +11,10 @@ public class PlayerScript : MonoBehaviour
     private bool onGround = false;
     private bool onWall = false;
 
+
     void Death()
-    {
+	{
+		SpecialEffectsHelper.Instance.Explosion(transform.position);
         RCS.Reset();
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
         Direction = 0;
