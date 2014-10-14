@@ -12,6 +12,7 @@ public class PlayerScript : MonoBehaviour
     private bool onGround = false;
     private bool onWall = false;
     public bool onRope = false;
+	private bool onBumper = false;
     public float modSpeed = 0;
 
     void Death()
@@ -64,6 +65,11 @@ public class PlayerScript : MonoBehaviour
             modSpeed = RS.modSpeed;
             Direction = RS.ropeDirection;
         }
+		BumperScript BpS = collision.gameObject.GetComponent<BumperScript>();
+		if (BpS != null)
+		{
+			onBumper = true;
+		}
     }
     void OnCollisionExit2D(Collision2D collision)
     {
@@ -82,6 +88,11 @@ public class PlayerScript : MonoBehaviour
             onRope = false;
             modSpeed = 0;
         }
+		BumperScript BpS = collision.gameObject.GetComponent<BumperScript>();
+		if (BpS != null)
+		{
+			onBumper = false;
+		}
     }
     // Update is called once per frame
     void Update()
