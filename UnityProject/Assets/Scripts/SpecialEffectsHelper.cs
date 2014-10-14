@@ -16,12 +16,13 @@ public class SpecialEffectsHelper : MonoBehaviour
 	void Awake()
 	{
 		// Register the singleton
-		if (Instance != null)
+		if (Instance == null)
 		{
-			Debug.LogError("Multiple instances of SpecialEffectsHelper!");
+			//Debug.LogError("Multiple instances of SpecialEffectsHelper!");
+            Instance = this;
 		}
 		
-		Instance = this;
+		
 	}
 	
 	/// <summary>
