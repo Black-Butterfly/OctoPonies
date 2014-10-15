@@ -10,7 +10,7 @@ public class PlayerScript2 : MonoBehaviour
     private Vector2 movement;
     public bool onGround = false;
 	public bool onWall = false;
-
+	
     void Death()
     {
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
@@ -46,7 +46,9 @@ public class PlayerScript2 : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if (Input.GetAxis("Horizontal") != 0 && onGround) 
+		AttackScript ws = this.GetComponent<AttackScript>();
+
+        if (Input.GetAxis("Horizontal") != 0 && onGround && !ws.isAttacking()) 
         {
 			int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
 			if(!(onWall && lastDirection == newDirection))
@@ -73,6 +75,12 @@ public class PlayerScript2 : MonoBehaviour
 			lastDirection = Direction;
 			inputY = (speed.y * 1) - rigidbody2D.velocity.y;
 			this.rigidbody2D.gravityScale = 5;
+		}
+
+		bool attack = Input.GetButtonDown("Fire1");
+		if(attack)
+		{
+			ws.Attack(Direction);
 		}
 
         if (this.transform.localPosition.y < deathY) Death();
