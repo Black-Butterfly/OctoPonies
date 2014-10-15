@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     private bool onWall = false;
     public bool onRope = false;
 	private bool onBumper = false;
+	private int bumperForce = 0;
     public float modSpeed = 0;
 
     void Death()
@@ -51,6 +52,7 @@ public class PlayerScript : MonoBehaviour
             if (Mathf.Approximately(angle, 90))
             { // Bas
                 onGround = true;
+				this.rigidbody2D.gravityScale = 5;
             }
         }
         TrapScript TS = collision.gameObject.GetComponent<TrapScript>();
@@ -68,7 +70,15 @@ public class PlayerScript : MonoBehaviour
 		BumperScript BpS = collision.gameObject.GetComponent<BumperScript>();
 		if (BpS != null)
 		{
-			onBumper = true;
+			Vector2 bump = collision.contacts[0].normal;
+			
+			float angleBumper = Vector2.Angle(bump, Vector2.up);
+
+			if (Mathf.Approximately(angleBumper, 0) || Mathf.Approximately(angleBumper, 180))
+			{ // Gauche (0) ou Droite (180)
+				onBumper = true;
+				bumperForce = BpS.bumperForce;
+			}
 		}
     }
     void OnCollisionExit2D(Collision2D collision)
@@ -92,12 +102,15 @@ public class PlayerScript : MonoBehaviour
 		if (BpS != null)
 		{
 			onBumper = false;
+			modSpeed = 0;
 		}
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0 && onGround && !onRope)
+		AttackScript ws = this.GetComponent<AttackScript>();
+
+		if (Input.GetAxis("Horizontal") != 0 && onGround && !onRope && !ws.isAttacking())
         {
             RCS.StartMoving();
             int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
@@ -107,6 +120,9 @@ public class PlayerScript : MonoBehaviour
                 Direction = newDirection;
             }
         }
+
+		if(onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
+
         float inputY = 0;
         bool jump = Input.GetButtonDown("Jump");
 
@@ -119,7 +135,23 @@ public class PlayerScript : MonoBehaviour
             Direction = -(lastDirection);
             lastDirection = Direction;
             inputY = (speed.y * 1) - rigidbody2D.velocity.y;
+			this.rigidbody2D.gravityScale = 5;
         }
+
+		/****/
+
+		else if(onBumper)
+		{
+			inputY = bumperForce - rigidbody2D.velocity.y;
+		}
+
+		/****/
+
+		bool attack = Input.GetButtonDown("Fire1");
+		if(attack)
+		{
+			ws.Attack(Direction);
+		}
 
         var dist = (transform.position - Camera.main.transform.position).z;
 
