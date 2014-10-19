@@ -15,7 +15,7 @@
    id="svg5181"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="Runing pos1 grouped.svg">
+   sodipodi:docname="Runing to Anim.svg">
   <defs
      id="defs5183">
     <linearGradient
@@ -755,9 +755,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="176.52128"
-     inkscape:cy="507.91767"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="63.813724"
+     inkscape:cy="575.25912"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -784,7 +784,7 @@
      id="layer1">
     <g
        id="g5555"
-       transform="translate(-251.42857,-5.7142857)">
+       transform="matrix(-1,0,0,1,964.07833,-5.7142857)">
       <g
          id="g5540">
         <path
@@ -815,7 +815,7 @@
     </g>
     <g
        id="g5512"
-       transform="translate(2.8571427,-280)">
+       transform="matrix(-1,0,0,1,709.79261,-280)">
       <path
          sodipodi:nodetypes="sssss"
          inkscape:connector-curvature="0"
@@ -843,7 +843,7 @@
     </g>
     <g
        id="g5500"
-       transform="translate(-2.8571429,-288.57143)">
+       transform="matrix(-1,0,0,1,715.5069,-288.57143)">
       <path
          sodipodi:nodetypes="sssss"
          inkscape:connector-curvature="0"
@@ -871,7 +871,7 @@
     </g>
     <g
        id="g5586"
-       transform="translate(-14.285714,-57.142857)">
+       transform="matrix(-1,0,0,1,726.93547,-57.142857)">
       <path
          sodipodi:nodetypes="ssscss"
          inkscape:connector-curvature="0"
@@ -929,7 +929,7 @@
     </g>
     <g
        id="g5576"
-       transform="translate(-94.285714,102.85714)">
+       transform="matrix(-1,0,0,1,806.93547,102.85714)">
       <path
          sodipodi:nodetypes="asaaa"
          inkscape:connector-curvature="0"
@@ -945,7 +945,7 @@
     </g>
     <g
        id="g5609"
-       transform="translate(-74.285714,42.857143)">
+       transform="matrix(-1,0,0,1,786.93547,42.857143)">
       <path
          sodipodi:nodetypes="sssss"
          inkscape:connector-curvature="0"
@@ -961,7 +961,7 @@
     </g>
     <g
        id="g5615"
-       transform="translate(-142.85714,134.28571)">
+       transform="matrix(-1,0,0,1,855.5069,134.28571)">
       <path
          transform="matrix(17.918142,-3.5881445,4.1198901,20.515216,-2714.8138,44.067957)"
          d="m 179.13042,56.264133 c 0,0.805627 -1.5021,1.458717 -3.35504,1.458717 -1.85295,0 -3.35505,-0.65309 -3.35505,-1.458717 0,-0.805627 1.5021,-1.458716 3.35505,-1.458716 1.85294,0 3.35504,0.653089 3.35504,1.458716 z"
@@ -985,7 +985,7 @@
     </g>
     <g
        id="g5562"
-       transform="translate(-25.714286,114.28571)">
+       transform="matrix(-1,0,0,1,738.36404,114.28571)">
       <path
          sodipodi:nodetypes="sssccccs"
          inkscape:connector-curvature="0"
@@ -1047,7 +1047,7 @@
     </g>
     <g
        id="g5621"
-       transform="translate(-245.71429,274.28571)">
+       transform="matrix(-1,0,0,1,958.36405,274.28571)">
       <path
          sodipodi:nodetypes="ssccccss"
          inkscape:connector-curvature="0"
@@ -1098,7 +1098,7 @@
     </g>
     <g
        id="g5546"
-       transform="translate(-542.85714,-245.71429)">
+       transform="matrix(-1,0,0,1,1255.5069,-245.71429)">
       <g
          transform="translate(677.14286,211.42857)"
          id="g5524">
@@ -1141,7 +1141,8 @@
       </g>
     </g>
     <g
-       id="g4790">
+       id="g4790"
+       transform="matrix(-1,0,0,1,712.64976,0)">
       <g
          transform="translate(-145.71429,62.857143)"
          id="g5582">
@@ -1168,7 +1169,7 @@
          inkscape:connector-curvature="0"
          id="path4020"
          d="m 144.28571,500.93361 8.57143,12.85714 -11.78571,-7.5 2.5,5.71429 -5,-1.42857"
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.57522124" />
+         style="opacity:0.57522122;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
   </g>
 </svg>
