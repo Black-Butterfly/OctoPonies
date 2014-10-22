@@ -137,7 +137,11 @@ public class PlayerScript : MonoBehaviour
 	                Direction = newDirection;
 	            }
 	        }
-
+            if (Input.GetButton("Slide") && onGround)
+            {
+                animator.SetBool("IsSliding", true);
+            }
+            else animator.SetBool("IsSliding", false);
 			if(onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
 
 	        float inputY = 0;
