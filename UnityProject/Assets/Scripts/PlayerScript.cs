@@ -16,6 +16,10 @@ public class PlayerScript : MonoBehaviour
 	private int bumperForce = 0;
     public float modSpeed = 0;
 
+	void Start()
+	{
+		Time.timeScale = 1.0f;
+	}
     void Death()
 	{
 		SpecialEffectsHelper.Instance.Explosion(transform.position);
