@@ -108,75 +108,78 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		AttackScript ws = this.GetComponent<AttackScript>();
-
-		if (Input.GetAxis("Horizontal") != 0 && onGround && !onRope && !ws.isAttacking())
-        {
-            RCS.StartMoving();
-            int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
-            if (!(onWall && lastDirection == newDirection))
-            {
-                lastDirection = Direction;
-                Direction = newDirection;
-            }
-        }
-
-		if(onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
-
-        float inputY = 0;
-        bool jump = Input.GetButtonDown("Jump");
-
-        if (jump && (onGround || onRope))
-        {
-            inputY = speed.y * 1;
-        }
-        else if (jump && onWall && !onGround)
-        {
-            Direction = -(lastDirection);
-            lastDirection = Direction;
-            inputY = (speed.y * 1) - rigidbody2D.velocity.y;
-			this.rigidbody2D.gravityScale = 5;
-        }
-
-		/****/
-
-		else if(onBumper)
+		if(Time.timeScale > 0)
 		{
-			inputY = bumperForce - rigidbody2D.velocity.y;
-		}
+			AttackScript ws = this.GetComponent<AttackScript>();
 
-		/****/
+			if (Input.GetAxis("Horizontal") != 0 && onGround && !onRope && !ws.isAttacking())
+	        {
+	            RCS.StartMoving();
+	            int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
+	            if (!(onWall && lastDirection == newDirection))
+	            {
+	                lastDirection = Direction;
+	                Direction = newDirection;
+	            }
+	        }
 
-		bool attack = Input.GetButtonDown("Fire1");
-		if(attack)
-		{
-			ws.Attack(Direction);
-		}
+			if(onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
 
-        var dist = (transform.position - Camera.main.transform.position).z;
+	        float inputY = 0;
+	        bool jump = Input.GetButtonDown("Jump");
 
-        var leftBorder = Camera.main.ViewportToWorldPoint(
-            new Vector3(0, 0, dist)
-        ).x;
+	        if (jump && (onGround || onRope))
+	        {
+	            inputY = speed.y * 1;
+	        }
+	        else if (jump && onWall && !onGround)
+	        {
+	            Direction = -(lastDirection);
+	            lastDirection = Direction;
+	            inputY = (speed.y * 1) - rigidbody2D.velocity.y;
+				this.rigidbody2D.gravityScale = 5;
+	        }
 
-        var rightBorder = Camera.main.ViewportToWorldPoint(
-            new Vector3(1, 0, dist)
-        ).x;
+			/****/
 
-        var topBorder = Camera.main.ViewportToWorldPoint(
-            new Vector3(0, 1, dist)
-        ).y;
+			else if(onBumper)
+			{
+				inputY = bumperForce - rigidbody2D.velocity.y;
+			}
 
-        var bottomBorder = Camera.main.ViewportToWorldPoint(
-            new Vector3(0, 0, dist)
-        ).y;
+			/****/
 
-        if (transform.position.x < leftBorder ||
-            transform.position.x > rightBorder ||
-            transform.position.y < bottomBorder ||
-            transform.position.y > topBorder) Death();
-        float speedx = speed.x + modSpeed;
-        movement = new Vector2(speed.x * Direction, inputY + rigidbody2D.velocity.y);
-        rigidbody2D.velocity = movement;
-    }
+			bool attack = Input.GetButtonDown("Fire1");
+			if(attack)
+			{
+				ws.Attack(Direction);
+			}
+
+	        var dist = (transform.position - Camera.main.transform.position).z;
+
+	        var leftBorder = Camera.main.ViewportToWorldPoint(
+	            new Vector3(0, 0, dist)
+	        ).x;
+
+	        var rightBorder = Camera.main.ViewportToWorldPoint(
+	            new Vector3(1, 0, dist)
+	        ).x;
+
+	        var topBorder = Camera.main.ViewportToWorldPoint(
+	            new Vector3(0, 1, dist)
+	        ).y;
+
+	        var bottomBorder = Camera.main.ViewportToWorldPoint(
+	            new Vector3(0, 0, dist)
+	        ).y;
+
+	        if (transform.position.x < leftBorder ||
+	            transform.position.x > rightBorder ||
+	            transform.position.y < bottomBorder ||
+	            transform.position.y > topBorder) Death();
+	        float speedx = speed.x + modSpeed;
+	        movement = new Vector2(speed.x * Direction, inputY + rigidbody2D.velocity.y);
+	        rigidbody2D.velocity = movement;
+	    }
+	}
 }
