@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
-public class PlayerScript : MonoBehaviour 
+public class PlayerScriptBack : MonoBehaviour 
 {
+
     private Animator animator;
 
     public RailCameraScript RCS = null;
@@ -23,15 +24,12 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-	void Start()
-	{
-		Time.timeScale = 1.0f;
-	}
     void Death()
 	{
         animator.SetBool("IsRunning", false);
         animator.SetBool("IsJumping", false);
         animator.SetTrigger("Death");
+        this.transform.localScale = new Vector3(2, 2, 1);
 		SpecialEffectsHelper.Instance.Explosion(transform.position);
         RCS.Reset();
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
@@ -66,7 +64,6 @@ public class PlayerScript : MonoBehaviour
             if (Mathf.Approximately(angle, 90))
             { // Bas
                 onGround = true;
-				this.rigidbody2D.gravityScale = 5;
             }
         }
         TrapScript TS = collision.gameObject.GetComponent<TrapScript>();
@@ -122,95 +119,79 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(Time.timeScale > 0)
+        if (Input.GetAxis("Horizontal") != 0 && onGround && !onRope)
+        {
+            animator.SetBool("IsRunning", true);
+            RCS.StartMoving();
+            int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
+            if (!(onWall && lastDirection == newDirection))
+            {
+                lastDirection = Direction;
+                Direction = newDirection;
+            }
+        }
+        float inputY = 0;
+        bool jump = Input.GetButtonDown("Jump");
+
+        if (jump && (onGround || onRope))
+        {
+            inputY = speed.y * 1;
+        }
+        else if (jump && onWall && !onGround)
+        {
+            Direction = -(lastDirection);
+            lastDirection = Direction;
+            inputY = (speed.y * 1) - rigidbody2D.velocity.y;
+        }
+
+		/****/
+
+		else if(onBumper)
 		{
-			AttackScript ws = this.GetComponent<AttackScript>();
+			inputY = bumperForce - rigidbody2D.velocity.y;
+		}
 
-			if (Input.GetAxis("Horizontal") != 0 && onGround && !onRope && !ws.isAttacking())
-	        {
-                animator.SetBool("IsRunning", true);
-	            RCS.StartMoving();
-	            int newDirection = (int)(Input.GetAxis("Horizontal") / Mathf.Abs(Input.GetAxis("Horizontal")));
-	            if (!(onWall && lastDirection == newDirection))
-	            {
-	                lastDirection = Direction;
-	                Direction = newDirection;
-	            }
-	        }
+		/****/
 
-			if(onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
+        var dist = (transform.position - Camera.main.transform.position).z;
 
-	        float inputY = 0;
-	        bool jump = Input.GetButtonDown("Jump");
+        var leftBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(0, 0, dist)
+        ).x;
 
-	        if (jump && (onGround || onRope))
-	        {
-	            inputY = speed.y * 1;
-	        }
-	        else if (jump && onWall && !onGround)
-	        {
-	            Direction = -(lastDirection);
-	            lastDirection = Direction;
-	            inputY = (speed.y * 1) - rigidbody2D.velocity.y;
-				this.rigidbody2D.gravityScale = 5;
-	        }
+        var rightBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(1, 0, dist)
+        ).x;
 
-			/****/
+        var topBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(0, 1, dist)
+        ).y;
 
-			else if(onBumper)
-			{
-				inputY = bumperForce - rigidbody2D.velocity.y;
-			}
+        var bottomBorder = Camera.main.ViewportToWorldPoint(
+            new Vector3(0, 0, dist)
+        ).y;
 
-			/****/
+        if (transform.position.x < leftBorder ||
+            transform.position.x > rightBorder ||
+            transform.position.y < bottomBorder ||
+            transform.position.y > topBorder) Death();
+        float speedx = speed.x + modSpeed;
+        
+        if (Direction != 0) this.transform.localScale = new Vector3(2 * Direction, 2, 1);
+        else this.transform.localScale = new Vector3(2, 2, 1);
 
-			bool attack = Input.GetButtonDown("Fire1");
-			if(attack)
-			{
-				ws.Attack(Direction);
-			}
+        if (!onGround)
+        {
+            animator.SetBool("IsJumping", true);
+            animator.SetBool("IsRunning", false);
+        }
+        else
+        {
+            if (Direction != 0) animator.SetBool("IsRunning", true);
+            animator.SetBool("IsJumping", false);
+        }
 
-	        var dist = (transform.position - Camera.main.transform.position).z;
-
-	        var leftBorder = Camera.main.ViewportToWorldPoint(
-	            new Vector3(0, 0, dist)
-	        ).x;
-
-	        var rightBorder = Camera.main.ViewportToWorldPoint(
-	            new Vector3(1, 0, dist)
-	        ).x;
-
-	        var topBorder = Camera.main.ViewportToWorldPoint(
-	            new Vector3(0, 1, dist)
-	        ).y;
-
-	        var bottomBorder = Camera.main.ViewportToWorldPoint(
-	            new Vector3(0, 0, dist)
-	        ).y;
-
-	        if (transform.position.x < leftBorder ||
-	            transform.position.x > rightBorder ||
-	            transform.position.y < bottomBorder ||
-	            transform.position.y > topBorder) Death();
-	        float speedx = speed.x + modSpeed;
-
-            if (Direction != 0) this.transform.localScale = new Vector3(2 * Direction, 2, 1);
-            else this.transform.localScale = new Vector3(2, 2, 1);
-
-            if (!onGround)
-            {
-                animator.SetBool("IsJumping", true);
-                animator.SetBool("IsRunning", false);
-            }
-            else
-            {
-                if (Direction != 0) animator.SetBool("IsRunning", true);
-                animator.SetBool("IsJumping", false);
-            }
-
-
-	        movement = new Vector2(speed.x * Direction, inputY + rigidbody2D.velocity.y);
-	        rigidbody2D.velocity = movement;
-	    }
-	}
+        movement = new Vector2(speed.x * Direction, inputY + rigidbody2D.velocity.y);
+        rigidbody2D.velocity = movement;
+    }
 }
