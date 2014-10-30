@@ -8,11 +8,13 @@ public class UpdateScript : MonoBehaviour {
 			if(Time.timeScale > 0.0f)
 			{
 				Time.timeScale = 0.0f;
+				AudioListener.pause = true;
 				this.gameObject.AddComponent("PauseMenuScript");
 			}
 			else
 			{
 				Time.timeScale = 1.0f;
+				AudioListener.pause = false;
 				Destroy(GetComponent<PauseMenuScript>());
 			}
 		}

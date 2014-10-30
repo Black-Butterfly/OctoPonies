@@ -15,6 +15,7 @@ public class PauseMenuScript : MonoBehaviour {
 			
 		{
 			Time.timeScale = 1.0f;
+			AudioListener.pause = false;
 			Destroy(this);
 		}
 		
