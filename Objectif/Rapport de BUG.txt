@@ -1,6 +1,8 @@
 Bug fréquent : 
 
 BUMPER --> souvent le bumper ne fait pas le bump et bloque le perso.
+Destruct --> Si on jump si un destruct on reste bloqué
+Glisse --> Si on glisse entre deux surface et que l'on lache la touche de glisse juste après on peut courrir avec la tête dans la plateforme
 
 Bug ? ? ? :
 
