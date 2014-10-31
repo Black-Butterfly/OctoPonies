@@ -52,6 +52,9 @@
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CollectibleScript.cs" />
      <Compile Include="Assets\Scripts\DestructibleScript.cs" />
+     <Compile Include="Assets\Scripts\MenuPlayScript.cs" />
+     <Compile Include="Assets\Scripts\MenuQuitScript.cs" />
+     <Compile Include="Assets\Scripts\MenuTextScript.cs" />
      <Compile Include="Assets\Scripts\MusicScript.cs" />
      <Compile Include="Assets\Scripts\PathNode.cs" />
      <Compile Include="Assets\Scripts\PauseMenuScript.cs" />

@@ -21,13 +21,13 @@ public class PauseMenuScript : MonoBehaviour {
 		
 		if(GUI.Button(new Rect(55, 150, 180, 40), "Restart"))
 		{
-			Application.LoadLevel(0);
+			Application.LoadLevel("Lvl1");
 			
 		}
 
-		if(GUI.Button(new Rect(55, 200, 180, 40), "Quit"))	
+		if(GUI.Button(new Rect(55, 200, 180, 40), "Return Menu"))	
 		{
-			Application.Quit();
+			Application.LoadLevel("Menu");
 		}
 		
 		GUI.EndGroup();
