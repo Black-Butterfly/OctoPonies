@@ -5,7 +5,7 @@ public class AttackScript : MonoBehaviour
 {
 	public Transform Weapon;
 	private float shootCooldown;
-	public float timeAttack = 0.5f;
+	public float timeAttack = 0.3f;
 
 	void Start()
 	{

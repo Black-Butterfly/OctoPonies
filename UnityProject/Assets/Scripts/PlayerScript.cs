@@ -51,6 +51,7 @@ public partial class PlayerScript : MonoBehaviour
         C_Block(collision, true);
         C_Trap(collision);
         C_Rope(collision, true);
+		C_Destructible(collision);
         C_Bumper(collision, true);
     }
 

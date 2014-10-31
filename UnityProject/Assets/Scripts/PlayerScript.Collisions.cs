@@ -67,6 +67,14 @@ public partial class PlayerScript
         }
     }
 
+	void C_Destructible(Collision2D collision) 
+	{ 
+		DestructibleScript DS = collision.gameObject.GetComponent<DestructibleScript>();
+		if (DS == null) return;
+
+		Direction = 0;
+	}
+
     void C_Bumper(Collision2D collision, bool Enter)
     {
         BumperScript BpS = collision.gameObject.GetComponent<BumperScript>();
