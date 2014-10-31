@@ -6,4 +6,5 @@ Glisse --> Si on glisse entre deux surface et que l'on lache la touche de glisse
 
 Bug ? ? ? :
 
-Wall jump vertical --> Il m'est arrivé une fois de wall-jumper en vertical à l'infini. 
+Wall jump vertical --> Il m'est arrivé une fois de wall-jumper en vertical à l'infini.
+Jump (Collision) --> Il est arrivé une fois que lors d'un saut, si un mur touche notre dos, on s'arrete de courir (colision, pas de distinction droite / gauche, collision detecté avec un mur?)
