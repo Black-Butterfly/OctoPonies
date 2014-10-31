@@ -12,11 +12,11 @@ public partial class PlayerScript : MonoBehaviour
 
     private bool FirstMove;
     private AttackScript ws;
-    private int Direction;
-    private int lastDirection;
-    private bool onGround;
-    private bool onWall;
-    private bool onRope;
+	private int Direction;
+	private int lastDirection;
+	private bool onGround;
+	private bool onWall;
+	private bool onRope;
 	private bool onBumper;
 	private int bumperForce;
     private float modSpeed;

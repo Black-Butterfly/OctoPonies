@@ -72,7 +72,12 @@ public partial class PlayerScript
 		DestructibleScript DS = collision.gameObject.GetComponent<DestructibleScript>();
 		if (DS == null) return;
 
-		Direction = 0;
+		Vector2 hit = collision.contacts[0].normal;
+		float angle = Vector2.Angle(hit, Vector2.right);
+		if (Mathf.Approximately(angle, 0) || Mathf.Approximately(angle, 180))
+		{ // Gauche (0) ou Droite (180)
+			Direction = 0;
+		}
 	}
 
     void C_Bumper(Collision2D collision, bool Enter)

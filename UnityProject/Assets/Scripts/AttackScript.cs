@@ -18,7 +18,7 @@ public class AttackScript : MonoBehaviour
 			shootCooldown = timeAttack;
 			var weapon = Instantiate(Weapon) as Transform;
 			weapon.transform.parent = transform;
-			weapon.localPosition = new Vector2(0.33f * (float)Direction, 0);
+			weapon.localPosition = new Vector2(0.33f, 0);
 
 			Destroy(weapon.gameObject, timeAttack);
 		}
