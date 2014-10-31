@@ -9,6 +9,7 @@ public partial class PlayerScript
         if (CS == null) return;
 
         score += CS.value;
+		ss.UpdateScore(score);
         Destroy(collision.gameObject);
     }
 

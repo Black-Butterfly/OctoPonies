@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\RailCameraScript.cs" />
      <Compile Include="Assets\Scripts\RopeScript.cs" />
      <Compile Include="Assets\Scripts\RotationScript.cs" />
+     <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\SpecialEffectsHelper.cs" />
      <Compile Include="Assets\Scripts\TrapScript.cs" />
      <Compile Include="Assets\Scripts\UpdateScript.cs" />

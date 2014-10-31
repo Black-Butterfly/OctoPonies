@@ -12,6 +12,7 @@ public partial class PlayerScript : MonoBehaviour
 
     private bool FirstMove;
     private AttackScript ws;
+	private ScoreScript ss;
 	private int Direction;
 	private int lastDirection;
 	private bool onGround;
@@ -34,6 +35,7 @@ public partial class PlayerScript : MonoBehaviour
         bumperForce = 0;
         modSpeed = 0;
         ws = GetComponent<AttackScript>();
+		ss = GameObject.Find("ScoreText").GetComponent<ScoreScript>();
     }
 
 	void Start()
