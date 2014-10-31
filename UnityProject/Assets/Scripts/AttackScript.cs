@@ -5,7 +5,7 @@ public class AttackScript : MonoBehaviour
 {
 	public Transform Weapon;
 	private float shootCooldown;
-	public float timeAttack = 0.3f;
+	public float timeAttack = 0.2f;
 
 	void Start()
 	{
@@ -18,7 +18,7 @@ public class AttackScript : MonoBehaviour
 			shootCooldown = timeAttack;
 			var weapon = Instantiate(Weapon) as Transform;
 			weapon.transform.parent = transform;
-			weapon.localPosition = new Vector2(0.33f, 0);
+			weapon.localPosition = new Vector2(0.33f, -0.05f);
 
 			Destroy(weapon.gameObject, timeAttack);
 		}
