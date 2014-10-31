@@ -5,6 +5,8 @@ Destruct --> Lorsqu'on s'arrete contre (Direction = 0), l'annimation courir cont
 Glisse --> Si on glisse entre deux surface et que l'on lache la touche de glisse juste après on peut courrir avec la tête dans la plateforme
 Music --> Après un reload on a plus de music
 Chute --> On peut chuter sur une surface où l'on est sensé devoir courir
+Manette --> On ne peut pas se mettre à courir
+BUMPER --> un bumper est one shot ??????? !!
 
 Bug ? ? ? :
 
