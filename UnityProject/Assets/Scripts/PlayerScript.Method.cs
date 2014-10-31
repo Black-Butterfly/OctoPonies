@@ -69,6 +69,7 @@ public partial class PlayerScript
     {
         float speedx = speed.x + modSpeed;
         rigidbody2D.velocity = new Vector2(speedx * Direction, InputY + rigidbody2D.velocity.y);
+
     }
 
     void CheckAttack()
@@ -103,9 +104,15 @@ public partial class PlayerScript
         }
         else if (onBumper)
         {
-            inputY = bumperForce - rigidbody2D.velocity.y;
-        }
-
+            if(bumperAngle == 0)
+				inputY = bumperForce - rigidbody2D.velocity.y;
+			else
+			{
+				inputY = bumperForce - rigidbody2D.velocity.y;
+				Direction = -(lastDirection);
+				lastDirection = Direction;
+        	}
+		}
         return inputY;
     }
 

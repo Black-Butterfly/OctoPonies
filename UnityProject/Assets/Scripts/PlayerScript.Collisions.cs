@@ -90,10 +90,11 @@ public partial class PlayerScript
         {
             Vector2 bump = collision.contacts[0].normal;
             float angleBumper = Vector2.Angle(bump, Vector2.right);
-            if (Mathf.Approximately(angleBumper, 90)) //Bas
+            //if (Mathf.Approximately(angleBumper, 90)) //Bas
             {
                 onBumper = true;
                 bumperForce = BpS.bumperForce;
+				bumperAngle = BpS.bumperAngle;
             }
         }
         else

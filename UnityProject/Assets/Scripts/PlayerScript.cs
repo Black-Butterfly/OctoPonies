@@ -20,6 +20,7 @@ public partial class PlayerScript : MonoBehaviour
 	private bool onRope;
 	private bool onBumper;
 	private int bumperForce;
+	private int bumperAngle;
     private float modSpeed;
 
     void Awake()
@@ -33,6 +34,7 @@ public partial class PlayerScript : MonoBehaviour
         onRope = false;
         onBumper = false;
         bumperForce = 0;
+		bumperAngle = 0;
         modSpeed = 0;
         ws = GetComponent<AttackScript>();
 		ss = GameObject.Find("ScoreText").GetComponent<ScoreScript>();
@@ -45,7 +47,7 @@ public partial class PlayerScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        C_Collectible(collision);
+		C_Collectible(collision);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -54,7 +56,7 @@ public partial class PlayerScript : MonoBehaviour
         C_Trap(collision);
         C_Rope(collision, true);
 		C_Destructible(collision);
-        C_Bumper(collision, true);
+		C_Bumper(collision, true);
     }
 
     void OnCollisionExit2D(Collision2D collision)
