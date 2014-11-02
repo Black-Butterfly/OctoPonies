@@ -60,7 +60,11 @@ public partial class PlayerScript
         }
         else
         {
-            if (Direction != 0) animator.SetBool("IsRunning", true);
+            if (Direction != 0)
+			{
+				animator.SetBool("IsRunning", true);
+				SpecialEffectsHelper.Instance.Running(transform.position);
+			}
             animator.SetBool("IsJumping", false);
         }
     }

@@ -10,10 +10,11 @@ public partial class PlayerScript
 
         score += CS.value;
 		ss.UpdateScore(score);
-        Destroy(collision.gameObject);
-    }
-
-    void C_Block(Collision2D collision, bool Enter)
+		Destroy(collision.gameObject);
+		SpecialEffectsHelper.Instance.Collect(transform.position);
+	}
+	
+	void C_Block(Collision2D collision, bool Enter)
     {
         BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
         if (BS == null) return;

@@ -12,6 +12,7 @@ public class SpecialEffectsHelper : MonoBehaviour
 	
 	public ParticleSystem smokeEffect;
 	public ParticleSystem fireEffect;
+	public ParticleSystem collectibleEffect;
 	
 	void Awake()
 	{
@@ -24,19 +25,21 @@ public class SpecialEffectsHelper : MonoBehaviour
 		
 		
 	}
-	
-	/// <summary>
-	/// Create an explosion at the given location
-	/// </summary>
-	/// <param name="position"></param>
+
 	public void Explosion(Vector3 position)
 	{
-		// Smoke on the water
 		instantiate(smokeEffect, position);
-		
-		// Tu tu tu, tu tu tudu
-		
-		// Fire in the sky
+
+		instantiate(fireEffect, position);
+	}
+
+	public void Running(Vector3 position)
+	{
+		instantiate(smokeEffect, position);
+	}
+
+	public void Collect(Vector3 position)
+	{
 		instantiate(fireEffect, position);
 	}
 	
