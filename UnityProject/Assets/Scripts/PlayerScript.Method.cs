@@ -87,8 +87,10 @@ public partial class PlayerScript
 
     void UpdateGravity()
     {
-        if (onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
-        else this.rigidbody2D.gravityScale = 5.0f;
+        if (onWall && rigidbody2D.velocity.y < 0) 
+			this.rigidbody2D.gravityScale = 2.2f;
+        else 
+			this.rigidbody2D.gravityScale = 5.0f;
     }
 
     float CalculateInputY()
@@ -108,14 +110,14 @@ public partial class PlayerScript
         }
         else if (onBumper)
         {
-            if(bumperAngle == 0)
-				inputY = bumperForce - rigidbody2D.velocity.y;
-			else
+            inputY = bumperForce - rigidbody2D.velocity.y;
+			if(bumperAngle != 0)
 			{
-				inputY = bumperForce - rigidbody2D.velocity.y;
 				Direction = -(lastDirection);
 				lastDirection = Direction;
+				inputY = bumperForce - rigidbody2D.velocity.y;
         	}
+			onBumper = false;
 		}
         return inputY;
     }
