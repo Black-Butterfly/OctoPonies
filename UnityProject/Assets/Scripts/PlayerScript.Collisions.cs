@@ -82,20 +82,19 @@ public partial class PlayerScript
 		}
 	}
 
-    void C_Bumper(Collision2D collision, bool Enter)
+    void C_Bumper(Collider2D collision, bool Enter)
     {
         BumperScript BpS = collision.gameObject.GetComponent<BumperScript>();
         if (BpS == null) return;
 
         if (Enter)
         {
-            Vector2 bump = collision.contacts[0].normal;
-            float angleBumper = Vector2.Angle(bump, Vector2.right);
-            //if (Mathf.Approximately(angleBumper, 45)) //Bas
+            //Vector2 bump = collision.contacts[0].normal;
+            //float angleBumper = Vector2.Angle(bump, Vector2.right);
+            //if (Mathf.Approximately(angleBumper, 90)) //Bas
             {
                 onBumper = true;
                 bumperForce = BpS.bumperForce;
-				bumperAngle = BpS.bumperAngle;
             }
         }
         else

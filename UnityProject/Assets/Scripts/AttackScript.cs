@@ -16,16 +16,11 @@ public class AttackScript : MonoBehaviour
 		if(shootCooldown <= 0f && Direction != 0)
 		{
 			shootCooldown = timeAttack;
-			var weapon = Instantiate(Weapon) as Transform;
-			weapon.transform.parent = transform;
-			weapon.localPosition = new Vector2(0.33f, -0.05f);
-
-			Destroy(weapon.gameObject, timeAttack);
 		}
 	}
 	public bool isAttacking()
 	{
-		return shootCooldown > 0;
+		return shootCooldown > 0f;
 	}
 	void Update()
 	{

@@ -44,27 +44,43 @@ public partial class PlayerScript
 
     void CheckAnimator()
     {
-        if (Direction != 0) this.transform.localScale = new Vector3(2 * Direction, 2, 1);
-        else this.transform.localScale = new Vector3(2, 2, 1);
-
-        if (Input.GetButton("Slide") && onGround)
+        animator.SetBool("Attacking", ws.isAttacking());
+        if (!onWall)
         {
-            animator.SetBool("IsSliding", true);
+            animator.SetBool("OnWall", false);
+            if (Direction != 0) this.transform.localScale = new Vector3(2 * Direction, 2, 1);
+            else this.transform.localScale = new Vector3(2, 2, 1);
         }
-        else animator.SetBool("IsSliding", false);
+        else
+        {
+            animator.SetBool("OnWall", true);
+            this.transform.localScale = new Vector3(2 * lastDirection, 2, 1);
+        }
+
+        animator.SetBool("IsSliding", (Input.GetButton("Slide") && onGround));
+
+        animator.SetBool("OnRope", onRope);
 
         if (!onGround)
         {
             animator.SetBool("IsJumping", true);
+            if (rigidbody2D.velocity.y > 0)
+                animator.SetBool("IsFalling", false);
+            else
+                animator.SetBool("IsFalling", true);
+
             animator.SetBool("IsRunning", false);
         }
         else
         {
             if (Direction != 0)
-			{
-				animator.SetBool("IsRunning", true);
-				SpecialEffectsHelper.Instance.Running(transform.position);
-			}
+            {
+                animator.SetBool("IsRunning", true);
+		SpecialEffectsHelper.Instance.Running(new Vector3(transform.position.x, 
+				                                  transform.position.y - 1,
+				                                  transform.position.z));
+            }
+            else animator.SetBool("IsRunning", false);
             animator.SetBool("IsJumping", false);
         }
     }
@@ -73,7 +89,6 @@ public partial class PlayerScript
     {
         float speedx = speed.x + modSpeed;
         rigidbody2D.velocity = new Vector2(speedx * Direction, InputY + rigidbody2D.velocity.y);
-
     }
 
     void CheckAttack()
@@ -81,16 +96,14 @@ public partial class PlayerScript
         bool attack = Input.GetButtonDown("Fire1");
 		if(attack)
 		{
-			ws.Attack(Direction);
+            ws.Attack(Direction);
 		}
     }
 
     void UpdateGravity()
     {
-        if (onWall && rigidbody2D.velocity.y < 0) 
-			this.rigidbody2D.gravityScale = 2.2f;
-        else 
-			this.rigidbody2D.gravityScale = 5.0f;
+        if (onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
+        else this.rigidbody2D.gravityScale = 5.0f;
     }
 
     float CalculateInputY()
@@ -110,14 +123,7 @@ public partial class PlayerScript
         }
         else if (onBumper)
         {
-            inputY = bumperForce - rigidbody2D.velocity.y;
-			if(bumperAngle != 0)
-			{
-				Direction = -(lastDirection);
-				lastDirection = Direction;
-				inputY = bumperForce - rigidbody2D.velocity.y;
-        	}
-			onBumper = false;
+			inputY = bumperForce - rigidbody2D.velocity.y;
 		}
         return inputY;
     }

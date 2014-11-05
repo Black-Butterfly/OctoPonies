@@ -48,22 +48,25 @@ public partial class PlayerScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
 		C_Collectible(collision);
+        C_Bumper(collision, true);
     }
-
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        C_Bumper(collision, false);
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         C_Block(collision, true);
         C_Trap(collision);
         C_Rope(collision, true);
 		C_Destructible(collision);
-		C_Bumper(collision, true);
+		
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
         C_Block(collision, false);
         C_Rope(collision, false);
-        C_Bumper(collision, false);
     }
 
     // Update is called once per frame
