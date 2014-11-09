@@ -9,8 +9,10 @@ Manette --> On ne peut pas se mettre à courir
 BUMPER --> un bumper est one shot ??????? !!
 
 
+
 Bug ? ? ? :
 
+CAMERA + Wall Jump vertical --> Epilepsie sur saut vertical infini
 Wall jump vertical --> Il m'est arrivé une fois de wall-jumper en vertical à l'infini.
 Jump (Collision) --> Il est arrivé une fois que lors d'un saut, si un mur touche notre dos, on s'arrete de courir (colision, pas de distinction droite / gauche, collision detecté avec un mur?)
 BUMPER --> On ne saute plus à la bonne hauteur !
