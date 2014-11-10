@@ -8,6 +8,7 @@ public class RailCameraScript : MonoBehaviour {
     private bool isMoving = false;
     private Vector3 CheckPoint;
     public void StartMoving() { isMoving = true; }
+	private PlayerScript ps;
 
     public void Reset() {
         isMoving = false;
@@ -15,6 +16,7 @@ public class RailCameraScript : MonoBehaviour {
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
         this.transform.localPosition = newPos;
         Speed = next.SpeedToThis;
+
     }
 	// Use this for initialization
 	void Start () {

@@ -19,15 +19,16 @@ public class UpperHairScript : MonoBehaviour {
 
     private float processAngle(float a)
     {
-        return Mathf.Clamp(a - 90f, -90, 40);
+        return Mathf.Clamp(a - 90f, -90, 90);
     }
 
 	// Update is called once per frame
 	void Update () {
         float angle = processAngle(Vector2.Angle(ps.rigidbody2D.velocity, down));
-        transform.localRotation = Quaternion.AngleAxis(angle, rotAxis);
-        float scale = transform.localScale.x + ((scaleDir * Random.Range(-10, 50)) / 100);
-        transform.localScale = new Vector3(scale, 1, 1);
-        tryChange(scale);
+        transform.rotation = Quaternion.AngleAxis(angle, rotAxis);
+        
+		float scale = transform.localScale.x + ((scaleDir * Random.Range(-10, 50)) / 100f);
+		transform.localScale = new Vector3 (scale, 1, 1);
+		tryChange(scale);
 	}
 }
