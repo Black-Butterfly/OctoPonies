@@ -6,15 +6,17 @@ public class MenuScript : MonoBehaviour {
 	private MenuTextScript mts;
 	private string[] menu;
 	private int choice = 0;
+	private const int nbChoices = 4;
 	
 	void Start ()
 	{
 		Screen.showCursor = false;
 
-		menu = new string[3];
+		menu = new string[nbChoices];
 		menu[0] = "Play";
 		menu[1] = "Controls";
-		menu[2] = "Exit";
+		menu[2] = "Credits";
+		menu[3] = "Exit";
 
 		mts =  GameObject.Find(menu[choice]).GetComponent<MenuTextScript>();
 		mts.Focus();
@@ -24,7 +26,7 @@ public class MenuScript : MonoBehaviour {
 	{
 		if(Input.GetKeyDown("down"))
 		{
-			choice = ++choice % 3;
+			choice = ++choice % nbChoices;
 
 			mts.UnFocus();
 			mts =  GameObject.Find(menu[choice]).GetComponent<MenuTextScript>();
@@ -32,7 +34,7 @@ public class MenuScript : MonoBehaviour {
 		}
 		else if(Input.GetKeyDown("up"))
 		{
-			choice = Mathf.Abs((--choice + 3) % 3);
+			choice = Mathf.Abs((--choice + nbChoices) % nbChoices);
 			
 			mts.UnFocus();
 			mts =  GameObject.Find(menu[choice]).GetComponent<MenuTextScript>();
@@ -49,6 +51,9 @@ public class MenuScript : MonoBehaviour {
 				Application.LoadLevel("KeyConfig");
 				break;
 			case 2 :
+				Application.LoadLevel("Credits");
+				break;
+			case 3 :
 				Application.Quit();
 				break;
 			default:
