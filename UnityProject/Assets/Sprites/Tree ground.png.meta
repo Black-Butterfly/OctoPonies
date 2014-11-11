@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 9973c9194d40f174990746af96399201
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tree ground_0
+    21300002: Tree ground_1
+    21300004: Tree ground_2
+    21300006: Tree ground_3
+    21300008: Tree ground_4
+    21300010: Tree ground_5
+    21300012: Tree ground_6
+    21300014: Tree ground_7
+    21300016: Tree ground_8
+    21300018: Tree ground_9
+    21300020: Tree ground_10
+    21300022: Tree ground_11
+    21300024: Tree ground_12
+    21300026: Tree ground_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tree ground_0
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 2279
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2277
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 2279
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_3
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2270
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1589
+        width: 529
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_5
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1589
+        width: 529
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_6
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1478
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 838
+        width: 529
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_8
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 838
+        width: 529
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_9
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 651
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_10
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 642
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_11
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 650
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 529
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree ground_13
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 0
+        width: 529
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
