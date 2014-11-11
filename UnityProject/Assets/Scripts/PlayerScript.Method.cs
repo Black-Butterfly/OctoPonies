@@ -14,7 +14,7 @@ public partial class PlayerScript
         this.transform.localPosition = newPos;
         FirstMove = true;
         MS.StopPlaying();
-        Application.LoadLevel(0);
+        Application.LoadLevel("Lvl1");
     }
 
     void CheckBorders()
