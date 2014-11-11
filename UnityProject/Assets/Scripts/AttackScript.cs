@@ -3,7 +3,7 @@ using UnityEditor;
 
 public class AttackScript : MonoBehaviour
 {
-	public Transform Weapon;
+	//public Transform Weapon;
 	private float shootCooldown;
 	public float timeAttack = 0.2f;
 
@@ -22,7 +22,7 @@ public class AttackScript : MonoBehaviour
 	{
 		return shootCooldown > 0f;
 	}
-	void Update()
+	void FixedUpdate()
 	{
 		if (shootCooldown > 0)
 		{

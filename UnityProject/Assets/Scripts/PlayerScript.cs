@@ -10,6 +10,8 @@ public partial class PlayerScript : MonoBehaviour
     public Vector3 CheckPoint = new Vector3(-14, 2, 0);
     public int score = 0;
 
+    private Vector2 Movement;
+	private float InputY;
     private bool FirstMove;
     private AttackScript ws;
 	private ScoreScript ss;
@@ -19,12 +21,13 @@ public partial class PlayerScript : MonoBehaviour
 	private bool onWall;
 	private bool onRope;
 	private bool onBumper;
-	private int bumperForce;
+	public int bumperForce;
 	//private int bumperAngle;
     private float modSpeed;
 
     void Awake()
     {
+        Movement = new Vector2(0, 0);
         FirstMove = true;
         animator = GetComponent<Animator>();
         Direction = 0;
@@ -34,6 +37,7 @@ public partial class PlayerScript : MonoBehaviour
         onRope = false;
         onBumper = false;
         bumperForce = 0;
+		InputY = 0;
 		//bumperAngle = 0;
         modSpeed = 0;
         ws = GetComponent<AttackScript>();
@@ -76,11 +80,16 @@ public partial class PlayerScript : MonoBehaviour
 
         CheckDirection();
         UpdateGravity();
-        float InputY = CalculateInputY();
+		InputY = CalculateInputY();
         CheckAttack();
         CheckBorders();
         CheckAnimator();
-        UpdateMovement(InputY);
-	    
+		UpdateMovement (InputY);
 	}
+
+	void FixedUpdate()
+	{
+		UpdateVelocity ();
+	}
+
 }

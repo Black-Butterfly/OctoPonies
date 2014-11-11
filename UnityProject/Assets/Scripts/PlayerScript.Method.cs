@@ -85,12 +85,21 @@ public partial class PlayerScript
         }
     }
 
-    void UpdateMovement(float InputY)
-    {
-        float speedx = speed.x + modSpeed; 
-        rigidbody2D.velocity = new Vector2(speedx * Direction, InputY);
-    }
+	void UpdateMovement(float InputY)
+	{
+        float speedx = speed.x + modSpeed;
+        float speedy = rigidbody2D.velocity.y;
+        if (InputY != 0)
+        {
+            speedy = InputY;
+        }
+        Movement = new Vector2(speedx * Direction, speedy);
+	}
 
+    void UpdateVelocity()
+    {
+        rigidbody2D.velocity = Movement;
+    }
     void CheckAttack()
     {
         bool attack = Input.GetButtonDown("Fire1");
@@ -108,7 +117,7 @@ public partial class PlayerScript
 
     float CalculateInputY()
     {
-		float inputY = rigidbody2D.velocity.y;
+		float inputY = 0;
         bool jump = Input.GetButtonDown("Jump");
 
         if (jump && (onGround || onRope) && !onBumper)
