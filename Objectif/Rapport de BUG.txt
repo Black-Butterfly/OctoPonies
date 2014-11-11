@@ -1,18 +1,12 @@
 Bug fréquent : 
 
-BUMPER --> souvent le bumper ne fait pas le bump et bloque le perso.
-Destruct --> Lorsqu'on s'arrete contre (Direction = 0), l'annimation courir continue
 Glisse --> Si on glisse entre deux surface et que l'on lache la touche de glisse juste après on peut courrir avec la tête dans la plateforme
-Music --> Après un reload on a plus de music
-Chute --> On peut chuter sur une surface où l'on est sensé devoir courir
-Manette --> On ne peut pas se mettre à courir
-BUMPER --> un bumper est one shot ??????? !!
-
+?A reconfirmer? Chute --> On peut chuter sur une surface où l'on est sensé devoir courir
+#Manette --> On ne peut pas se mettre à courir
 
 
 Bug ? ? ? :
 
-CAMERA + Wall Jump vertical --> Epilepsie sur saut vertical infini
 Wall jump vertical --> Il m'est arrivé une fois de wall-jumper en vertical à l'infini.
 Jump (Collision) --> Il est arrivé une fois que lors d'un saut, si un mur touche notre dos, on s'arrete de courir (colision, pas de distinction droite / gauche, collision detecté avec un mur?)
-BUMPER --> On ne saute plus à la bonne hauteur !
+?A reconfirmer? BUMPER --> On ne saute plus à la bonne hauteur !
