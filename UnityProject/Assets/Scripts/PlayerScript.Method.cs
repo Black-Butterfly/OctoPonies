@@ -115,16 +115,28 @@ public partial class PlayerScript
         else this.rigidbody2D.gravityScale = 5.0f;
     }
 
+	void tryJump(){
+		bool jump = Input.GetButtonDown("Jump");
+		if ((jump && (onGround || onRope) && !onBumper)
+		    || (jump && onWall && !onGround && !onBumper)
+		    || (onBumper && onGround))
+		{
+			doJump = true;
+		}
+	}
+
     float CalculateInputY()
     {
 		float inputY = 0;
-        bool jump = Input.GetButtonDown("Jump");
+		if (!doJump) return 0;
 
-        if (jump && (onGround || onRope) && !onBumper)
+		doJump = false;
+
+        if ((onGround || onRope) && !onBumper)
         {
 			inputY = speed.y  + rigidbody2D.velocity.y;
         }
-        else if (jump && onWall && !onGround && !onBumper)
+        else if (onWall && !onGround && !onBumper)
         {
             Direction = -(lastDirection);
             lastDirection = Direction;

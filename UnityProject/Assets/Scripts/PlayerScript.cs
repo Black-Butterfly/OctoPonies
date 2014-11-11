@@ -24,9 +24,11 @@ public partial class PlayerScript : MonoBehaviour
 	public int bumperForce;
 	//private int bumperAngle;
     private float modSpeed;
+	private bool doJump;
 
     void Awake()
     {
+		doJump = false;
         Movement = new Vector2(0, 0);
         FirstMove = true;
         animator = GetComponent<Animator>();
@@ -80,15 +82,16 @@ public partial class PlayerScript : MonoBehaviour
 
         CheckDirection();
         UpdateGravity();
-		InputY = CalculateInputY();
+		tryJump();
         CheckAttack();
         CheckBorders();
         CheckAnimator();
-		UpdateMovement (InputY);
 	}
 
 	void FixedUpdate()
 	{
+		InputY = CalculateInputY();
+		UpdateMovement (InputY);
 		UpdateVelocity ();
 	}
 
