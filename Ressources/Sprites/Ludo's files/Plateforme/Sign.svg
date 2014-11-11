@@ -15,7 +15,7 @@
    id="svg3781"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 4">
+   sodipodi:docname="Sign.svg">
   <defs
      id="defs3783">
     <linearGradient
@@ -206,6 +206,22 @@
          offset="1"
          id="stop4504-1" />
     </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter3825">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.544851"
+         id="feGaussianBlur3827" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3829">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.544851"
+         id="feGaussianBlur3831" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -215,7 +231,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="505.46855"
+     inkscape:cx="347.88475"
      inkscape:cy="868.60353"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -233,7 +249,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -349,13 +365,13 @@
        x="626.95557"
        y="72.805756" />
     <path
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter3829)"
        d="m 589.04026,132.4621 -0.2404,30.43284 -29.21747,-28.84619 -13.16626,12.97859 28.59494,29.4397 -29.80554,0.2702 16.77504,17.64183 44.88128,0.0147 -0.34331,-44.21066 z"
        id="rect2987-5-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
     <path
-       style="fill:url(#radialGradient4506-5);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#radialGradient4506-5);fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter3825)"
        d="m 589.04019,132.46208 -0.24041,30.43284 -29.21747,-28.84619 -13.16626,12.97858 28.59494,29.43971 -29.80553,0.2702 16.77503,17.64183 44.88129,0.0147 -0.34331,-44.21067 z"
        id="rect2987-52"
        inkscape:connector-curvature="0"

@@ -848,9 +848,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="290.24912"
-     inkscape:cy="277.52665"
+     inkscape:zoom="1.979899"
+     inkscape:cx="350.77744"
+     inkscape:cy="171.97027"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -867,7 +867,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1410,5 +1410,15 @@
          id="tspan5645"
          x="288.90363"
          y="661.43317">Group to anim :</tspan></text>
+    <path
+       style="opacity:0.5;fill:none;stroke:#000000;stroke-width:0.10700409;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 413.09,936.27767 1.18899,2.91844 1.94563,-1.40517 -1.83754,-0.1081 0.86473,-1.83753 -1.62136,0.43236"
+       id="path4686"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.5;fill:none;stroke:#000000;stroke-width:0.10700409;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 414.22495,939.14207 -1.189,-2.91845 -1.94563,1.40518 1.83755,0.10809 -0.86473,1.83754 1.62136,-0.43236"
+       id="path4686-6"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
