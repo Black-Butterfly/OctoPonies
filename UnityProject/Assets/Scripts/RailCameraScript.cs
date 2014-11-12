@@ -22,7 +22,7 @@ public class RailCameraScript : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
-        /*A virer*/
+        /*A virer* /
         transform.position = firstNode.transform.position;
         /*Fin a virer*/
 		ps = GameObject.Find ("Player").GetComponent<PlayerScript> ();
