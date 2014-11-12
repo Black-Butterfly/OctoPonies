@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 99694e86fa7a48c499915d9cf9776272
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Skies translation_0
+    21300002: Skies translation_1
+    21300004: Skies translation_2
+    21300006: Skies translation_3
+    21300008: Skies translation_4
+    21300010: Skies translation_5
+    21300012: Skies translation_6
+    21300014: Skies translation_7
+    21300016: Skies translation_8
+    21300018: Skies translation_9
+    21300020: Skies translation_10
+    21300022: Skies translation_11
+    21300024: Skies translation_12
+    21300026: Skies translation_13
+    21300028: Skies translation_14
+    21300030: Skies translation_15
+    21300032: Skies translation_16
+    21300034: Skies translation_17
+    21300036: Skies translation_18
+    21300038: Skies translation_19
+    21300040: Skies translation_20
+    21300042: Skies translation_21
+    21300044: Skies translation_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Skies translation_0
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1723
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_1
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1723
+        width: 6
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_2
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1712
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_3
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1723
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1721
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1721
+        width: 89
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_6
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1723
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_7
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1714
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1213
+        width: 1038
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_9
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1127
+        width: 89
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1129
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_11
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1120
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1127
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1120
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_14
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1127
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1120
+        width: 78
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 586
+        width: 1041
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 452
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_18
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 448
+        width: 78
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_19
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 452
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_20
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 456
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 448
+        width: 65
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skies translation_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1038
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

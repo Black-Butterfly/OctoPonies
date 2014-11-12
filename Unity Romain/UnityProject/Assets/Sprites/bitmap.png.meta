@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 68e2981dd061ea24b8f57c2966e9c989
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bitmap_0
+    21300002: bitmap_1
+    21300004: bitmap_2
+    21300006: bitmap_3
+    21300008: bitmap_4
+    21300010: bitmap_5
+    21300012: bitmap_6
+    21300014: bitmap_7
+    21300016: bitmap_8
+    21300018: bitmap_9
+    21300020: bitmap_10
+    21300022: bitmap_11
+    21300024: bitmap_12
+    21300026: bitmap_13
+    21300028: bitmap_14
+    21300030: bitmap_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bitmap_0
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 620
+        width: 117
+        height: 67
+      alignment: 9
+      pivot: {x: .847034395, y: .155403703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 552
+        width: 13
+        height: 28
+      alignment: 9
+      pivot: {x: .52977109, y: .82482475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 546
+        width: 20
+        height: 41
+      alignment: 9
+      pivot: {x: .542458355, y: .803766012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 504
+        width: 146
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 514
+        width: 11
+        height: 33
+      alignment: 9
+      pivot: {x: .552774608, y: .793199956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 501
+        width: 14
+        height: 39
+      alignment: 9
+      pivot: {x: .540435791, y: .819343746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 492
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: .742858887, y: .450003475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 486
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: .207693249, y: .525001526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 437
+        width: 14
+        height: 43
+      alignment: 9
+      pivot: {x: .562310338, y: .909111559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 427
+        width: 15
+        height: 56
+      alignment: 9
+      pivot: {x: .5, y: .887626648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_10
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 398
+        width: 81
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_11
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 394
+        width: 17
+        height: 41
+      alignment: 9
+      pivot: {x: .500329852, y: .859660089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 357
+        width: 18
+        height: 62
+      alignment: 9
+      pivot: {x: .424632609, y: .871976793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_13
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 344
+        width: 41
+        height: 30
+      alignment: 9
+      pivot: {x: .242659777, y: .76377362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_14
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 311
+        width: 43
+        height: 36
+      alignment: 9
+      pivot: {x: .300636113, y: .719812155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bitmap_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 237
+        width: 100
+        height: 99
+      alignment: 9
+      pivot: {x: .119604796, y: .391531587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

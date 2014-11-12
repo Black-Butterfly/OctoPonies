@@ -1,0 +1,2 @@
+C:\Users\Dygit4lis\Documents\GitHub\OctoPonies\UnityProject\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Dygit4lis\Documents\GitHub\OctoPonies\UnityProject\obj\Debug\Assembly-CSharp.dll

@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 00cad3a34ee62cb42bf906f1195666cc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ennemi bumper_0
+    21300002: Ennemi bumper_1
+    21300004: Ennemi bumper_2
+    21300006: Ennemi bumper_3
+    21300008: Ennemi bumper_4
+    21300010: Ennemi bumper_5
+    21300012: Ennemi bumper_6
+    21300014: Ennemi bumper_7
+    21300016: Ennemi bumper_8
+    21300018: Ennemi bumper_9
+    21300020: Ennemi bumper_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ennemi bumper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 81
+        height: 67
+      alignment: 9
+      pivot: {x: .750006437, y: .487536311}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 132
+        width: 54
+        height: 48
+      alignment: 9
+      pivot: {x: .298963755, y: .378218651}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 120
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: .171935603, y: .674914002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 56
+        width: 14
+        height: 28
+      alignment: 9
+      pivot: {x: .470176071, y: .77587235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 52
+        width: 13
+        height: 22
+      alignment: 9
+      pivot: {x: .451822132, y: .765705466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 50
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: .408664227, y: .845270872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 52
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: .513918042, y: .787056625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 10
+        height: 29
+      alignment: 9
+      pivot: {x: .520876706, y: .831149936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 15
+        height: 33
+      alignment: 9
+      pivot: {x: .360821038, y: .854273379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1
+        width: 12
+        height: 31
+      alignment: 9
+      pivot: {x: .499999374, y: .769378364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi bumper_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 12
+        height: 32
+      alignment: 9
+      pivot: {x: .395615906, y: .819676638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
