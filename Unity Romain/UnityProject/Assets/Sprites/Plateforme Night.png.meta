@@ -1,10 +1,39 @@
 fileFormatVersion: 2
-guid: 47f7d6c4e3d2a9849bd08fff7579af61
+guid: 3caa4bf1e38375c459522b67d3c486b7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Plateforme Night Tiling
-    21300002: Plateforme Night Begin
-    21300004: Plateforme Night End
+    21300000: Plateforme Night_0
+    21300002: Plateforme Night_1
+    21300004: Plateforme Night_2
+    21300006: Plateforme Night_3
+    21300008: Plateforme Night_4
+    21300010: Plateforme Night_5
+    21300012: Plateforme Night_6
+    21300014: Plateforme Night_7
+    21300016: Plateforme Night_8
+    21300018: Plateforme Night_9
+    21300020: Plateforme Night_10
+    21300022: Plateforme Night_11
+    21300024: Plateforme Night_12
+    21300026: Plateforme Night_13
+    21300028: Plateforme Night_14
+    21300030: Plateforme Night_15
+    21300032: Plateforme Night_16
+    21300034: Plateforme Night_17
+    21300036: Plateforme Night_18
+    21300038: Plateforme Night_19
+    21300040: Plateforme Night_20
+    21300042: Plateforme Night_21
+    21300044: Plateforme Night_22
+    21300046: Plateforme Night_23
+    21300048: Plateforme Night_24
+    21300050: Plateforme Night_25
+    21300052: Plateforme Night_26
+    21300054: Plateforme Night_27
+    21300056: Plateforme Night_28
+    21300058: Plateforme Night_29
+    21300060: Plateforme Night_30
+    21300062: Plateforme Night_31
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,35 +75,325 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Plateforme Night Tiling
+    - name: Plateforme Night_0
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1357
+        width: 26
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1381
+        width: 7
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1357
+        width: 7
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_3
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1381
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_4
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1357
+        width: 6
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1357
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1348
+        width: 20
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1078
+        width: 718
+        height: 238
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_8
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1030
+        width: 24
+        height: 31
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_9
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1054
+        width: 6
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_10
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1054
+        width: 7
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1021
+        width: 44
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_12
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1030
+        width: 6
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1030
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_14
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1030
+        width: 7
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_15
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1021
+        width: 42
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 763
+        width: 718
+        height: 237
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 701
+        width: 23
+        height: 31
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 725
+        width: 7
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 725
+        width: 7
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_20
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 700
+        width: 41
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_21
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 725
+        width: 7
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_22
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 701
+        width: 7
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 701
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_24
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 701
+        width: 7
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_25
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 701
+        width: 7
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_26
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 701
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_27
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 691
+        width: 22
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_28
       rect:
         serializedVersion: 2
         x: 0
-        y: 722
-        width: 716
-        height: 236
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        y: 421
+        width: 717
+        height: 238
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Plateforme Night Begin
+    - name: Plateforme Night_29
       rect:
         serializedVersion: 2
-        x: 8
-        y: 357
-        width: 716
-        height: 235
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 261
+        y: 301
+        width: 28
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Plateforme Night End
+    - name: Plateforme Night_30
       rect:
         serializedVersion: 2
-        x: 2
+        x: 290
+        y: 301
+        width: 74
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Night_31
+      rect:
+        serializedVersion: 2
+        x: 17
         y: 0
         width: 717
-        height: 236
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 238
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

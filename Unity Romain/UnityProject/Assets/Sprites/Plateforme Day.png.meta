@@ -1,10 +1,41 @@
 fileFormatVersion: 2
-guid: ed64b54dd5f6e714aa0ec6494d00d52e
+guid: 80e787b22e686df49ac72c3733151fef
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Plateforme Day Tilling
-    21300002: Plateforme Day Begin
-    21300004: Plateforme Day End
+    21300000: Plateforme Day_0
+    21300002: Plateforme Day_1
+    21300004: Plateforme Day_2
+    21300006: Plateforme Day_3
+    21300008: Plateforme Day_4
+    21300010: Plateforme Day_5
+    21300012: Plateforme Day_6
+    21300014: Plateforme Day_7
+    21300016: Plateforme Day_8
+    21300018: Plateforme Day_9
+    21300020: Plateforme Day_10
+    21300022: Plateforme Day_11
+    21300024: Plateforme Day_12
+    21300026: Plateforme Day_13
+    21300028: Plateforme Day_14
+    21300030: Plateforme Day_15
+    21300032: Plateforme Day_16
+    21300034: Plateforme Day_17
+    21300036: Plateforme Day_18
+    21300038: Plateforme Day_19
+    21300040: Plateforme Day_20
+    21300042: Plateforme Day_21
+    21300044: Plateforme Day_22
+    21300046: Plateforme Day_23
+    21300048: Plateforme Day_24
+    21300050: Plateforme Day_25
+    21300052: Plateforme Day_26
+    21300054: Plateforme Day_27
+    21300056: Plateforme Day_28
+    21300058: Plateforme Day_29
+    21300060: Plateforme Day_30
+    21300062: Plateforme Day_31
+    21300064: Plateforme Day_32
+    21300066: Plateforme Day_33
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,35 +77,345 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Plateforme Day Tilling
+    - name: Plateforme Day_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 631
-        width: 713
-        height: 234
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 289
+        y: 1295
+        width: 26
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Plateforme Day Begin
+    - name: Plateforme Day_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 332
+        x: 359
+        y: 1319
+        width: 7
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1295
+        width: 7
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_3
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1319
+        width: 7
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_4
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1295
+        width: 7
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1295
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1286
+        width: 21
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1015
         width: 714
-        height: 234
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 236
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Plateforme Day End
+    - name: Plateforme Day_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 967
+        width: 24
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_9
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 992
+        width: 7
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_10
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 992
+        width: 6
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 959
+        width: 43
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_12
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 967
+        width: 7
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 967
+        width: 20
+        height: 25
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_14
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 967
+        width: 6
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_15
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 967
+        width: 20
+        height: 25
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 959
+        width: 21
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 701
+        width: 717
+        height: 236
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 639
+        width: 22
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 664
+        width: 6
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_20
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 664
+        width: 6
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_21
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 639
+        width: 21
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_22
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 664
+        width: 6
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_23
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 639
+        width: 6
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_24
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 639
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_25
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 639
+        width: 6
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_26
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 639
+        width: 20
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_27
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 639
+        width: 6
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_28
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 639
+        width: 19
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_29
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 631
+        width: 21
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 358
+        width: 715
+        height: 237
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_31
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 289
+        width: 28
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_32
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 289
+        width: 64
+        height: 25
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plateforme Day_33
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 713
-        height: 234
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        width: 716
+        height: 235
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
