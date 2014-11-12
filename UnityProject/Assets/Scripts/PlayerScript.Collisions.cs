@@ -89,6 +89,7 @@ public partial class PlayerScript
 
         if (Enter)
         {
+			BpS.Bump();
             //Vector2 bump = collision.contacts[0].normal;
             //float angleBumper = Vector2.Angle(bump, Vector2.right);
             //if (Mathf.Approximately(angleBumper, 90)) //Bas
