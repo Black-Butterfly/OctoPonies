@@ -39,7 +39,7 @@ public class ForestScript : MonoBehaviour {
             float x = Random.Range(xMin, xMax);
             float y = Random.Range(yMin, yMax);
             Vector3 Pos = new Vector3(x, y, 0);
-            var c = Instantiate(Mountain) as GameObject;
+            GameObject c = Instantiate(Mountain) as GameObject;
             c.transform.parent = transform;
             c.transform.localPosition = Pos;
             c.renderer.sortingLayerName = renderer.sortingLayerName;

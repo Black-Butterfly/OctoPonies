@@ -17,13 +17,16 @@ public class RepeatSpriteBoundary : MonoBehaviour
     {
         // Get the current sprite with an unscaled size
         sprite = GetComponent<SpriteRenderer>();
-        Vector2 spriteSize = new Vector2(sprite.bounds.size.x / transform.localScale.x, sprite.bounds.size.y / transform.localScale.y);
+        Vector2 spriteSize = new Vector2(sprite.bounds.size.x / transform.localScale.x, sprite.bounds.size.y /* / transform.localScale.y */);
 
         // Generate a child prefab of the sprite renderer
         GameObject childPrefab = new GameObject();
         SpriteRenderer childSprite = childPrefab.AddComponent<SpriteRenderer>();
         childPrefab.transform.position = transform.position;
         childSprite.sprite = sprite.sprite;
+        childPrefab.transform.localScale = new Vector3(1, transform.localScale.y, 1);
+        childPrefab.renderer.sortingLayerName = renderer.sortingLayerName;
+        childPrefab.renderer.sortingOrder = renderer.sortingOrder;
 
         // Loop through and spit out repeated tiles
         GameObject child;
@@ -31,12 +34,9 @@ public class RepeatSpriteBoundary : MonoBehaviour
         for (int i = 0; i < l; i++)
         {
             child = Instantiate(childPrefab) as GameObject;
-            child.transform.position = transform.position + (new Vector3(spriteSize.x - 0.1f, 0, 0) * i);
-            child.transform.parent = transform;
-            child.renderer.sortingLayerName = "Layer 2";
-            child.renderer.sortingOrder = -100;
+            child.transform.localRotation = transform.localRotation;
+            child.transform.position = transform.position + (new Vector3(spriteSize.x - 0.1f, 0, 0) * i);   
         }
-
         // Set the parent last on the prefab to prevent transform displacement
         childPrefab.transform.parent = transform;
 

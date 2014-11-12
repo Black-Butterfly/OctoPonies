@@ -74,7 +74,7 @@ TextureImporter:
         y: 1117
         width: 109
         height: 226
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_1
@@ -84,7 +84,7 @@ TextureImporter:
         y: 1154
         width: 143
         height: 176
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_2
@@ -94,7 +94,7 @@ TextureImporter:
         y: 1117
         width: 80
         height: 240
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_3
@@ -104,7 +104,7 @@ TextureImporter:
         y: 1045
         width: 25
         height: 32
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_4
@@ -114,7 +114,7 @@ TextureImporter:
         y: 1070
         width: 7
         height: 7
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_5
@@ -124,7 +124,7 @@ TextureImporter:
         y: 1044
         width: 34
         height: 33
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_6
@@ -134,7 +134,7 @@ TextureImporter:
         y: 1045
         width: 7
         height: 24
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_7
@@ -144,7 +144,7 @@ TextureImporter:
         y: 1034
         width: 21
         height: 35
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_8
@@ -154,7 +154,7 @@ TextureImporter:
         y: 760
         width: 112
         height: 228
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_9
@@ -164,7 +164,7 @@ TextureImporter:
         y: 798
         width: 145
         height: 177
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_10
@@ -174,7 +174,7 @@ TextureImporter:
         y: 760
         width: 78
         height: 242
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_11
@@ -184,7 +184,7 @@ TextureImporter:
         y: 705
         width: 31
         height: 34
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_12
@@ -194,7 +194,7 @@ TextureImporter:
         y: 707
         width: 35
         height: 25
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_13
@@ -204,7 +204,7 @@ TextureImporter:
         y: 731
         width: 6
         height: 8
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_14
@@ -214,7 +214,7 @@ TextureImporter:
         y: 705
         width: 21
         height: 26
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_15
@@ -224,7 +224,7 @@ TextureImporter:
         y: 707
         width: 6
         height: 23
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_16
@@ -234,7 +234,7 @@ TextureImporter:
         y: 698
         width: 42
         height: 33
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_17
@@ -244,7 +244,7 @@ TextureImporter:
         y: 410
         width: 110
         height: 228
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_18
@@ -254,7 +254,7 @@ TextureImporter:
         y: 448
         width: 143
         height: 177
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_19
@@ -264,7 +264,7 @@ TextureImporter:
         y: 410
         width: 80
         height: 243
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_20
@@ -274,7 +274,7 @@ TextureImporter:
         y: 252
         width: 72
         height: 41
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_21
@@ -284,7 +284,7 @@ TextureImporter:
         y: 0
         width: 112
         height: 226
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_22
@@ -294,7 +294,7 @@ TextureImporter:
         y: 36
         width: 143
         height: 178
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree_23
@@ -304,7 +304,7 @@ TextureImporter:
         y: 0
         width: 79
         height: 241
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
