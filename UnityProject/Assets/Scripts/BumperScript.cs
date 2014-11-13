@@ -15,10 +15,4 @@ public class BumperScript : MonoBehaviour
     {
 		animator.SetTrigger("Bump");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

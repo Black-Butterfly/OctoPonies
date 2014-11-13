@@ -15,7 +15,6 @@ public class PauseMenuScript : MonoBehaviour {
 		Vector3 localPosition = GameObject.Find("Main Camera").transform.position;
 
 		GameObject sprite = this.transform.GetChild(0).gameObject;
-		Debug.Log(localPosition.z);
 		sprite.transform.position = new Vector3(localPosition.x, localPosition.y, localPosition.z + 10);
 
 		menu = new string[3];

@@ -1,12 +1,20 @@
-Bug fréquent : 
+----- Bug Fréquent ------------------------------------------------------------------------
 
-Glisse --> Si on glisse entre deux surface et que l'on lache la touche de glisse juste après on peut courrir avec la tête dans la plateforme
-?A reconfirmer? Chute --> On peut chuter sur une surface où l'on est sensé devoir courir
-#Manette --> On ne peut pas se mettre à courir
+Glisse --> Si on lache la touche de glisse entre 2 surfaces où il faut glisser
 
+Chute --> On peut chuter sur une surface où l'on est sensé devoir courir (ne detecte pas que l'on est au sol)
+Solution à essayer : Si la vitesse verticale est nul et que l'on ne saute ou ne "bump" pas, actualisé la variable "OnGround"
 
-Bug ? ? ? :
+----- Bug très rare -----------------------------------------------------------------------
 
 Wall jump vertical --> Il m'est arrivé une fois de wall-jumper en vertical à l'infini.
 Jump (Collision) --> Il est arrivé une fois que lors d'un saut, si un mur touche notre dos, on s'arrete de courir (colision, pas de distinction droite / gauche, collision detecté avec un mur?)
-?A reconfirmer? BUMPER --> On ne saute plus à la bonne hauteur !
+
+----- A reconfirmer (Normalement corigé) --------------------------------------------------
+
+BUMPER --> On ne saute plus à la bonne hauteur !
+
+----- Bug pas prioritaire -----------------------------------------------------------------
+
+Manette --> On ne peut pas se mettre à courir
+Raison : Gestion manette remise à plus tard
