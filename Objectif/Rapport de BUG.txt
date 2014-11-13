@@ -1,6 +1,6 @@
 ----- Bug Fréquent ------------------------------------------------------------------------
 
-Glisse --> Si on lache la touche de glisse entre 2 surfaces où il faut glisser
+Glisse --> Si on lache la touche de glisse entre 2 surfaces où il faut glisser, on cours la tête dans le mur
 
 Chute --> On peut chuter sur une surface où l'on est sensé devoir courir (ne detecte pas que l'on est au sol)
 Solution à essayer : Si la vitesse verticale est nul et que l'on ne saute ou ne "bump" pas, actualisé la variable "OnGround"
@@ -8,7 +8,9 @@ Solution à essayer : Si la vitesse verticale est nul et que l'on ne saute ou ne 
 ----- Bug très rare -----------------------------------------------------------------------
 
 Wall jump vertical --> Il m'est arrivé une fois de wall-jumper en vertical à l'infini.
-Jump (Collision) --> Il est arrivé une fois que lors d'un saut, si un mur touche notre dos, on s'arrete de courir (colision, pas de distinction droite / gauche, collision detecté avec un mur?)
+
+Jump (Collision) --> Il est arrivé une fois que lors d'un saut, si un mur touche notre dos, on s'arrete de courir
+(colision, pas de distinction droite / gauche, collision detecté avec un mur?)
 
 ----- A reconfirmer (Normalement corigé) --------------------------------------------------
 
