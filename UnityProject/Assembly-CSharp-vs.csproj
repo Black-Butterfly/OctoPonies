@@ -49,7 +49,6 @@
      <Compile Include="Assets\Scripts\AttackScript.cs" />
      <Compile Include="Assets\Scripts\BlockScript.cs" />
      <Compile Include="Assets\Scripts\BumperScript.cs" />
-     <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CloudScript.cs" />
      <Compile Include="Assets\Scripts\CollectibleScript.cs" />
      <Compile Include="Assets\Scripts\DestructibleScript.cs" />
@@ -57,9 +56,6 @@
      <Compile Include="Assets\Scripts\Hair\LowerHairScript.cs" />
      <Compile Include="Assets\Scripts\Hair\UpperHairScript.cs" />
      <Compile Include="Assets\Scripts\MenuBackScript.cs" />
-     <Compile Include="Assets\Scripts\MenuKeyScript.cs" />
-     <Compile Include="Assets\Scripts\MenuPlayScript.cs" />
-     <Compile Include="Assets\Scripts\MenuQuitScript.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\MenuTextScript.cs" />
      <Compile Include="Assets\Scripts\MusicScript.cs" />

@@ -1,16 +1,41 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    CloudScript.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Génère des nuages de façon aléatoire.
+ *
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/**
+ * @brief La classe CloudScript génère les nuages.
+ *
+ */
 public class CloudScript : MonoBehaviour {
 
+	/** @brief nbCloud nombre de nuage généré, réglé dans Unity */
     public int nbCloud;
-
+	/** @brief Cloud1 texture du nuage, donnée dans Unity */
     public GameObject Cloud1;
+	/** @brief Cloud2 texture du nuage, donnée dans Unity */
     public GameObject Cloud2;
+	/** @brief Cloud3 texture du nuage, donnée dans Unity */
     public GameObject Cloud3;
-
+	/** @brief xMin, xMax, yMin, yMax coordonnée dans lesquel les nuages sont générés, , réglé dans Unity */
     public float xMin, xMax, yMin, yMax;
-	// Use this for initialization
+
+	/**
+     * S'execute lors de la création du script.
+     * Initialise les variables et génère de façon aléatoire les nuages.
+     *
+     */
 	void Start () {
         GameObject[] Prefabs = new GameObject[3];
         Prefabs[0] = Cloud1;
@@ -30,10 +55,5 @@ public class CloudScript : MonoBehaviour {
             c.renderer.sortingLayerName = renderer.sortingLayerName;
             c.renderer.sortingOrder = 200;
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

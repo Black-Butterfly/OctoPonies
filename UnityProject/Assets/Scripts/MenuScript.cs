@@ -1,13 +1,40 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    MenuScript.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Gère le menu principale.
+ *
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/**
+ * @brief La classe MenuScript gère le menu principale.
+ *
+ */
 public class MenuScript : MonoBehaviour {
-	
+
+	/** @brief mts contiendra le script MenuTextScript du bouton selectionné */
 	private MenuTextScript mts;
+	/** @brief menu tableau contenant les choix du menu possible */
 	private string[] menu;
+	/** @brief choice choix actuellement selectionné */
 	private int choice = 0;
+	/** @brief nbChoices nombre de choix total au menu */
 	private const int nbChoices = 4;
-	
+
+	/**
+     * S'execute lors de la création du script.
+     * Cache le pointeur au lancement du jeu.
+     * Initialise le menu et met le focus sur le 1er choix.
+     *
+     */
 	void Start ()
 	{
 		Screen.showCursor = false;
@@ -22,6 +49,11 @@ public class MenuScript : MonoBehaviour {
 		mts.Focus();
 	}
 
+	/**
+	 * Appellé à chaque frame
+     * Gère le menu. Change le focus en fonction des touches appuyé, gère les actions.
+     *
+     */
 	void Update ()
 	{
 		if(Input.GetKeyDown("down"))

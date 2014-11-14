@@ -1,8 +1,30 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    UpdateScript.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Gestion du menu de pause.
+ *
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/**
+ * @brief La classe vide UpdateScript.
+ *
+ */
 public class UpdateScript : MonoBehaviour {
 
+	/**
+	 * Appellé à chaque frame
+     * Surveille la mise en pause et fait apparaitre le menu pause si il faut ou le surprime.
+     *
+     */
 	void Update () {
 		if(Input.GetButtonDown("Pause")) {
 			if(Time.timeScale > 0.0f)

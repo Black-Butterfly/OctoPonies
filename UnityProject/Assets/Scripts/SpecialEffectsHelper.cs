@@ -1,43 +1,70 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    SpecialEffectsHelper.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Gestion de particule.
+ *
+ */
 
-/// <summary>
-/// Creating instance of particles from code with no effort
-/// </summary>
+using UnityEngine;
+
+/**
+ * @brief La classe SpecialEffectsHelper gère les effets de particule.
+ *
+ */
 public class SpecialEffectsHelper : MonoBehaviour
 {
-	/// <summary>
-	/// Singleton
-	/// </summary>
-
+	/** @brief SpecialEffectsHelper instance de particule */
 	public static SpecialEffectsHelper Instance;
-	
+
+	/** @brief smokeEffect particule de fumé */
 	public ParticleSystem smokeEffect;
+	/** @brief fireEffect particule de feu */
 	public ParticleSystem fireEffect;
+	/** @brief collectibleEffect particule de collectible */
 	public ParticleSystem collectibleEffect;
 
+	/** @brief layer contient le layer d'affichage */
     private Transform layer;
+	/** @brief runCpt temps restant avant nouvelle particule */
 	private float runCpt;
+	/** @brief runCpt temps avant nouvelle particule */
 	private float cdRun = 0.5f;
 
+	/**
+     * S'execute lors de la création du script.
+     * Initialisation
+     *
+     */
 	void Awake()
 	{
-		// Register the singleton
 		if (Instance == null)
 		{
-			//Debug.LogError("Multiple instances of SpecialEffectsHelper!");
 			runCpt = 0f;
             Instance = this;
             layer = GameObject.Find("Layer2").transform;
 		}
-		
-		
 	}
 
+	/**
+	 * Appellé à chaque frame
+     * Met à jour le delai
+     *
+     */
 	void Update ()
 	{
 		if (runCpt > 0) runCpt -= Time.deltaTime;
 	}
 
+	/**
+     * Crée une explosion
+     *
+     */
 	public void Explosion(Vector3 position)
 	{
 		var c1 = instantiate(smokeEffect, position);
@@ -48,6 +75,10 @@ public class SpecialEffectsHelper : MonoBehaviour
         c2.renderer.sortingLayerName = "Layer 2";
 	}
 
+	/**
+     * Particule lorsque le joueur cours
+     *
+     */
 	public void Running(Vector3 position)
 	{
 		if (runCpt <= 0) {
@@ -58,6 +89,10 @@ public class SpecialEffectsHelper : MonoBehaviour
 		}
 	}
 
+	/**
+     * Particule pour les collectibles
+     *
+     */
 	public void Collect(Vector3 position)
 	{
 		var c = instantiate(fireEffect, position);
@@ -65,11 +100,10 @@ public class SpecialEffectsHelper : MonoBehaviour
         c.renderer.sortingLayerName = "Layer 2";
 	}
 	
-	/// <summary>
-	/// Instantiate a Particle system from prefab
-	/// </summary>
-	/// <param name="prefab"></param>
-	/// <returns></returns>
+	/**
+     * Crée les particules et les détruits en fin de vie
+     *
+     */
 	private ParticleSystem instantiate(ParticleSystem prefab, Vector3 position)
 	{
 		ParticleSystem newParticleSystem = Instantiate(
@@ -77,12 +111,8 @@ public class SpecialEffectsHelper : MonoBehaviour
 			position,
 			Quaternion.identity
 			) as ParticleSystem;
-		
-		// Make sure it will be destroyed
-		Destroy(
-			newParticleSystem.gameObject,
-			newParticleSystem.startLifetime
-			);
+
+		Destroy(newParticleSystem.gameObject, newParticleSystem.startLifetime);
 		
 		return newParticleSystem;
 	}

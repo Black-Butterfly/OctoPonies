@@ -1,8 +1,31 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    PlayerScript.Collision.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Classe partiel de PlayerScript, gestion des collisions.
+ *
+ */
 
+using UnityEngine;
+
+/**
+ * @brief La classe PlayerScript cette partie gère les collisions.
+ *
+ */
 public partial class PlayerScript
 {
-
+	/**
+     * Gestion de la collision avec un collectible.
+     * Augmente le score, détruit le collectible avec effet de particule.
+     * 
+     * @param[in] collision contient la collision.
+     *
+     */
     void C_Collectible(Collider2D collision)
     {
         CollectibleScript CS = collision.gameObject.GetComponent<CollectibleScript>();
@@ -13,7 +36,15 @@ public partial class PlayerScript
 		Destroy(collision.gameObject);
 		SpecialEffectsHelper.Instance.Collect(transform.position);
 	}
-	
+
+	/**
+     * Gestion de la collision avec un block.
+     * Change les variables en fonction du coté de collision ou en sortie de collision.
+     *
+     * @param[in] collision contient la collision.
+     * @param[in] Enter true entre en collsion, false sort de colision.
+     *
+     */
 	void C_Block(Collision2D collision, bool Enter)
     {
         BlockScript BS = collision.gameObject.GetComponent<BlockScript>();
@@ -43,6 +74,13 @@ public partial class PlayerScript
         }
     }
 
+	/**
+     * Gestion de la collision avec un block.
+     * Tue le personnage si il touche un piege.
+     *
+     * @param[in] collision contient la collision.
+     *
+     */
     void C_Trap(Collision2D collision)
     {
         TrapScript TS = collision.gameObject.GetComponent<TrapScript>();
@@ -51,6 +89,14 @@ public partial class PlayerScript
         Death();
     }
 
+	/**
+     * Gestion de la collision avec un block.
+     * Change les variables en glissant le long d'une corde ou en la quittant.
+     *
+     * @param[in] collision contient la collision.
+     * @param[in] Enter true entre en collsion, false sort de colision.
+     *
+     */
     void C_Rope(Collision2D collision, bool Enter) 
     { 
         RopeScript RS = collision.gameObject.GetComponent<RopeScript>();
@@ -69,6 +115,13 @@ public partial class PlayerScript
         }
     }
 
+	/**
+     * Gestion de la collision avec un block.
+     * Si on entre en contact avec un destructible il nous arrete.
+     *
+     * @param[in] collision contient la collision.
+     *
+     */
 	void C_Destructible(Collision2D collision) 
 	{ 
 		DestructibleScript DS = collision.gameObject.GetComponent<DestructibleScript>();
@@ -82,6 +135,14 @@ public partial class PlayerScript
 		}
 	}
 
+	/**
+     * Gestion de la collision avec un block.
+     * Change les variables lorsqu'on touche un bumper ou qu'on le quitte.
+     *
+     * @param[in] collision contient la collision.
+     * @param[in] Enter true entre en collsion, false sort de colision.
+     *
+     */
     void C_Bumper(Collider2D collision, bool Enter)
     {
         BumperScript BpS = collision.gameObject.GetComponent<BumperScript>();

@@ -1,13 +1,39 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    PauseMenuScript.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Gestion du menu pause.
+ *
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/**
+ * @brief La classe PauseMenuScript gère le menu de pause.
+ *
+ */
 public class PauseMenuScript : MonoBehaviour {
 
+	/** @brief ms contiendra le script pour géré la musique */
 	private MusicScript ms;
+	/** @brief mts contiendra le script pour géré le texte */
 	private MenuTextScript mts;
+	/** @brief menu tableau contenant les choix du menu possible */
 	private string[] menu;
+	/** @brief choice choix actuellement selectionné */
 	private int choice = 0;
 
+	/**
+     * S'execute lors de la création du script.
+     * Initialise les variables et met le focus sur le 1er choix.
+     *
+     */
 	void Start()
 	{
 		ms = GameObject.Find("Music").GetComponent<MusicScript>();
@@ -26,6 +52,11 @@ public class PauseMenuScript : MonoBehaviour {
 		mts.Focus();
 	}
 
+	/**
+	 * Appellé à chaque frame
+     * Gère le menu. Change le focus en fonction des touches appuyé, gère les actions.
+     *
+     */
 	void Update ()
 	{
 		if(Input.GetKeyDown("down"))

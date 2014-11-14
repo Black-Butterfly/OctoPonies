@@ -1,18 +1,59 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    RailCameraScript.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Gestion de la caméra sur rail.
+ *
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/**
+ * @brief La classe RailCameraScript gère la camera sur rail.
+ *
+ */
 public class RailCameraScript : MonoBehaviour {
+
+	/** @brief firstNode contient le 1er noeud du chemin */
     public PathNode firstNode = null; //modif à chaque checkpoint
+	/** @brief Speed vitesse de la camera */
     public float Speed;
+	/** @brief firstNode contient le noeud du chemin vers lequel la camera va */
     private PathNode next = null; //modif à chaque node
+	/** @brief isMoving true la camera bouge, false immobile */
     private bool isMoving = false;
+	/** @brief CheckPoint coordonnée du checkpoint */
     private Vector3 CheckPoint;
-    public void StartMoving() { isMoving = true; }
+	/** @brief ps contient le script du joueur */
 	private PlayerScript ps;
+	/** @brief MaxToBorder distance max par rapport au joueur (not used)*/
 	public float MaxToBorder = 2;
+	/** @brief down vecteur vertical */
 	private Vector2 down = new Vector2(0, -1);
+	/** @brief angle contiendra l'angle */
     public float angle = 0;
-    public void Reset() {
+
+	/**
+     * Lance la camera
+     *
+     */
+	public void StartMoving()
+	{
+		isMoving = true;
+	}
+
+	/**
+     * Reset la camera
+     *
+     */
+    public void Reset()
+	{
         isMoving = false;
         next = firstNode;
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
@@ -20,7 +61,12 @@ public class RailCameraScript : MonoBehaviour {
         Speed = 15;
 
     }
-	// Use this for initialization
+
+	/**
+     * S'execute lors de la création du script.
+     * Initialisation de la camera.
+     *
+     */
 	void Start () {
         /*A virer* /
         transform.position = firstNode.transform.position;
@@ -31,6 +77,10 @@ public class RailCameraScript : MonoBehaviour {
         CheckPoint = transform.localPosition;
 	}
 
+	/**
+     * Distance par rapport au bord de la camera
+     *
+     */
 	float distToBorder(){
 		float dist = (ps.transform.position - Camera.main.transform.position).z;
 		float leftBorder = Camera.main.ViewportToWorldPoint(
@@ -39,7 +89,11 @@ public class RailCameraScript : MonoBehaviour {
 		return ps.transform.position.x - leftBorder; 
 	}
 
-	// Update is called once per frame
+	/**
+	 * Appellé à chaque frame
+     * Gère le déplacement de la caméra
+     *
+     */
 	void FixedUpdate () {
         if (next == null || !isMoving) return;
 

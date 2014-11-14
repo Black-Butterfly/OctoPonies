@@ -1,7 +1,28 @@
-﻿using UnityEngine;
+﻿/**
+ * @file    PlayerScript.Method.cs
+ *
+ * @author  Octoponies
+ *
+ * @date    14/11/2014
+ *
+ * @version 0.1
+ *
+ * @brief   Classe partiel de PlayerScript, contient les fonctions privee pour le joueur.
+ *
+ */
 
+using UnityEngine;
+
+/**
+ * @brief La classe PlayerScript cette partie contient les fonctions privee du joueur.
+ *
+ */
 public partial class PlayerScript
 {
+	/**
+     * Mort du joueur, relance le niveau
+     *
+     */
     void Death()
     {
         animator.SetBool("IsRunning", false);
@@ -17,6 +38,10 @@ public partial class PlayerScript
         Application.LoadLevel("Lvl1");
     }
 
+	/**
+     * Surveille les bords de la caméra, si le joueur sort, il meure.
+     *
+     */
     void CheckBorders()
     {
         var dist = (transform.position - Camera.main.transform.position).z;
@@ -42,6 +67,10 @@ public partial class PlayerScript
 	        transform.position.y > topBorder) Death();
     }
 
+	/**
+     * Met à jour l'animation du joueur.
+     *
+     */
     void CheckAnimator()
     {
         animator.SetBool("Attacking", ws.isAttacking());
@@ -85,6 +114,10 @@ public partial class PlayerScript
         }
     }
 
+	/**
+     * Mise à jour du mouvement
+     *
+     */
 	void UpdateMovement(float InputY)
 	{
         float speedx = speed.x + modSpeed;
@@ -96,10 +129,19 @@ public partial class PlayerScript
         Movement = new Vector2(speedx * Direction, speedy);
 	}
 
+	/**
+     * Applique le mouvement
+     *
+     */
     void UpdateVelocity()
     {
         rigidbody2D.velocity = Movement;
     }
+
+	/**
+     * Surveille la touche attaquer
+     *
+     */
     void CheckAttack()
     {
         bool attack = Input.GetButtonDown("Fire1");
@@ -109,12 +151,20 @@ public partial class PlayerScript
 		}
     }
 
+	/**
+     * Met à jour la gravité pour glissé plus doucement contre un mur.
+     *
+     */
     void UpdateGravity()
     {
         if (onWall && rigidbody2D.velocity.y < 0) this.rigidbody2D.gravityScale = 2.2f;
         else this.rigidbody2D.gravityScale = 5.0f;
     }
 
+	/**
+     * surveille la touche de saut
+     *
+     */
 	void tryJump(){
 		bool jump = Input.GetButtonDown("Jump");
 		if ((jump && (onGround || onRope) && !onBumper)
@@ -125,6 +175,10 @@ public partial class PlayerScript
 		}
 	}
 
+	/**
+     * Calcule le déplacement sur Y
+     *
+     */
     float CalculateInputY()
     {
 		float inputY = 0;
@@ -149,6 +203,10 @@ public partial class PlayerScript
         return inputY;
     }
 
+	/**
+     * Surveille l'axe horizontal
+     *
+     */
     void CheckDirection()
     {
         bool CanMove = Input.GetAxis("Horizontal") != 0 && onGround && !onRope && !ws.isAttacking();
