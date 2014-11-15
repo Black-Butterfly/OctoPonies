@@ -9,16 +9,20 @@ Voici le but du projet : http://www.youtube.com/watch?v=NExRAajiM_o
 ---------------------------------------------------------------------------------------------------------------------
 
 Mise en place de l'environnement de travail :
-https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/EnvironnementDeTravail.txt
+
+ https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/EnvironnementDeTravail.txt
 
 Explication de l'arborescence de fichier :
-https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Arborescence.txt
+
+ https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Arborescence.txt
 
 Deployer l'application :
-https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Deploiement.txt
+
+ https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Deploiement.txt
 
 Developpement futur dans le jeu :
-https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/DeveloppementFutur.txt
+
+ https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/DeveloppementFutur.txt
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -27,15 +31,19 @@ Groupe :
 
 Gameplay
 
-Stan : Stanislas.mur@gmail.com
-Kevin : kevin.havrez@gmail.com
-Jerome : armadon13127@gmail.com
+ Stan : Stanislas.mur@gmail.com
+ 
+ Kevin : kevin.havrez@gmail.com
+ 
+ Jerome : armadon13127@gmail.com
 
 Design
 
-Ludo : ludovic.romano@live.fr
-Romain : romain.lelievre93@gmail.com
-Yuxing : unearthnight@gmail.com
+ Ludo : ludovic.romano@live.fr
+ 
+ Romain : romain.lelievre93@gmail.com
+ 
+ Yuxing : unearthnight@gmail.com
 
 ------------------------------------------------------ FIN DU PROJET ------------------------------------------------
 
