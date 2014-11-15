@@ -8,13 +8,13 @@ Voici le but du projet : http://www.youtube.com/watch?v=NExRAajiM_o
 
 ---------------------------------------------------------------------------------------------------------------------
 
-[Mise en place de l'environnement de travail](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/EnvironnementDeTravail.txt)  
+[Mise en place de l'environnement de travail](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/EnvironnementDeTravail.md)  
 
-[Explication de l'arborescence de fichier](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Arborescence.txt)  
+[Explication de l'arborescence de fichier](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Arborescence.md)  
 
-[Deployer l'application](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Deploiement.txt)  
+[Deployer l'application](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Deploiement.md)  
 
-[Developpement futur dans le jeu](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/DeveloppementFutur.txt)  
+[Developpement futur dans le jeu](https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/DeveloppementFutur.md)  
 
 
 ---------------------------------------------------------------------------------------------------------------------
