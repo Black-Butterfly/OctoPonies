@@ -4,6 +4,9 @@ OctoPonies
 Musical Platform game
 
 
+Mise en place de l'environnement de travail : https://github.com/Black-Butterfly/OctoPonies/blob/master/Wiki/Test.txt
+
+
 Pensez à bien installer : http://unity3d.com/unity/download
 
 Voici le but du projet : http://www.youtube.com/watch?v=NExRAajiM_o
