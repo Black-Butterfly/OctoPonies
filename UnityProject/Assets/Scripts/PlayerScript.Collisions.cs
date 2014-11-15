@@ -34,7 +34,7 @@ public partial class PlayerScript
         score += CS.value;
 		ss.UpdateScore(score);
 		Destroy(collision.gameObject);
-		SpecialEffectsHelper.Instance.Collect(transform.position);
+		ParticuleScript.Instance.Collect(transform.position);
 	}
 
 	/**

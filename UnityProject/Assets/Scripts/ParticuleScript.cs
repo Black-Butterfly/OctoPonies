@@ -1,5 +1,5 @@
 ﻿/**
- * @file    SpecialEffectsHelper.cs
+ * @file    ParticuleScript.cs
  *
  * @author  Octoponies
  *
@@ -14,13 +14,13 @@
 using UnityEngine;
 
 /**
- * @brief La classe SpecialEffectsHelper gère les effets de particule.
+ * @brief La classe ParticuleScript gère les effets de particule.
  *
  */
-public class SpecialEffectsHelper : MonoBehaviour
+public class ParticuleScript : MonoBehaviour
 {
-	/** @brief SpecialEffectsHelper instance de particule */
-	public static SpecialEffectsHelper Instance;
+	/** @brief ParticuleScript instance de particule */
+	public static ParticuleScript Instance;
 
 	/** @brief smokeEffect particule de fumé */
 	public ParticleSystem smokeEffect;
@@ -67,10 +67,10 @@ public class SpecialEffectsHelper : MonoBehaviour
      */
 	public void Explosion(Vector3 position)
 	{
-		var c1 = instantiate(smokeEffect, position);
+		ParticleSystem c1 = instantiate(smokeEffect, position);
         c1.transform.parent = layer;
         c1.renderer.sortingLayerName = "Layer 2";
-		var c2 = instantiate(fireEffect, position);
+		ParticleSystem c2 = instantiate(fireEffect, position);
         c2.transform.parent = layer;
         c2.renderer.sortingLayerName = "Layer 2";
 	}
@@ -82,7 +82,7 @@ public class SpecialEffectsHelper : MonoBehaviour
 	public void Running(Vector3 position)
 	{
 		if (runCpt <= 0) {
-			var c = instantiate (smokeEffect, position);
+			ParticleSystem c = instantiate (smokeEffect, position);
             c.transform.parent = layer;
             c.renderer.sortingLayerName = "Layer 2";
 			runCpt = cdRun;
@@ -95,7 +95,7 @@ public class SpecialEffectsHelper : MonoBehaviour
      */
 	public void Collect(Vector3 position)
 	{
-		var c = instantiate(fireEffect, position);
+		ParticleSystem c = instantiate(fireEffect, position);
         c.transform.parent = layer;
         c.renderer.sortingLayerName = "Layer 2";
 	}
@@ -106,14 +106,11 @@ public class SpecialEffectsHelper : MonoBehaviour
      */
 	private ParticleSystem instantiate(ParticleSystem prefab, Vector3 position)
 	{
-		ParticleSystem newParticleSystem = Instantiate(
-			prefab,
-			position,
-			Quaternion.identity
-			) as ParticleSystem;
+		ParticleSystem particleSystem = Instantiate(prefab, position, 
+		                                               Quaternion.identity) as ParticleSystem;
 
-		Destroy(newParticleSystem.gameObject, newParticleSystem.startLifetime);
+		Destroy(particleSystem.gameObject, particleSystem.startLifetime);
 		
-		return newParticleSystem;
+		return particleSystem;
 	}
 }

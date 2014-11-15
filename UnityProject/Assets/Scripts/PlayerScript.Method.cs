@@ -28,7 +28,7 @@ public partial class PlayerScript
         animator.SetBool("IsRunning", false);
         animator.SetBool("IsJumping", false);
         animator.SetTrigger("Death");
-        SpecialEffectsHelper.Instance.Explosion(transform.position);
+		ParticuleScript.Instance.Explosion(transform.position);
         RCS.Reset();
         Vector3 newPos = new Vector3(CheckPoint.x, CheckPoint.y, CheckPoint.z);
         Direction = 0;
@@ -105,7 +105,7 @@ public partial class PlayerScript
             if (Direction != 0)
             {
                 animator.SetBool("IsRunning", true);
-		SpecialEffectsHelper.Instance.Running(new Vector3(transform.position.x, 
+				ParticuleScript.Instance.Running(new Vector3(transform.position.x, 
 				                                  transform.position.y - 1,
 				                                  transform.position.z));
             }
