@@ -29,7 +29,7 @@ Developpement futur dans le jeu :
 
 Groupe :
 
-Gameplay
+**Gameplay
 
  Stan : Stanislas.mur@gmail.com
  
@@ -37,7 +37,7 @@ Gameplay
  
  Jerome : armadon13127@gmail.com
 
-Design
+**Design
 
  Ludo : ludovic.romano@live.fr
  
