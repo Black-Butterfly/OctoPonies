@@ -24,14 +24,18 @@ Groupe :
 *Gameplay*
 
 * Stan : Stanislas.mur@gmail.com  
-* Kevin : kevin.havrez@gmail.com  
-* Jerome : armadon13127@gmail.com  
+* Jerome : armadon13127@gmail.com 
+ 
 
 *Design*
 
 * Ludo : ludovic.romano@live.fr  
 * Romain : romain.lelievre93@gmail.com  
-* Yuxing : unearthnight@gmail.com  
+ 
+*Anciennement dans le groupe, mais n'ayant rien produit*
+
+  * Kevin : kevin.havrez@gmail.com 
+  * Yuxing : unearthnight@gmail.com 
 
 --------------------------------------------------------------------------------------------------------------------
 Fin du projet de Génie Logiciel 
