@@ -23,7 +23,7 @@ Groupe :
 
 *Gameplay*
 
-* Stan : Stanislas.mur@gmail.com  
+* Stan : stanislas.mur@gmail.com  
 * Jerome : armadon13127@gmail.com 
  
 
